@@ -5,9 +5,7 @@ all:
 	pdflatex spa
 	mv spa.pdf CV_Pedro_Aguiar.pdf
 	(rm -rf *.ps *.log *.dvi *.aux *.*% *.lof *.lop *.lot *.toc *.idx *.ilg *.ind *.bbl *.blg *.out)
-pdf:
-	pdflatex spa
-	bibtex spa
+no-bib:
 	pdflatex spa
 	pdflatex spa
 	mv spa.pdf CV_Pedro_Aguiar.pdf
