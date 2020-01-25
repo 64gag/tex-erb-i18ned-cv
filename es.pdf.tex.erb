@@ -1,3 +1,6 @@
+<%- require 'i18n' -%>
+<%- I18n.load_path << Dir[File.expand_path("locales") + "/*.yml"] -%>
+<%- I18n.default_locale = :es # (note that `en` is already the default!) -%>
 \documentclass[11pt,a4paper,sans]{moderncv}	% opciones posibles incluyen tamaño de fuente ('10pt', '11pt' and '12pt'), tamaño de papel ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' y 'landscape') y familia de fuentes ('sans' y 'roman')
 
 \moderncvstyle{classic}				% 'casual', 'classic', 'oldstyle' y 'banking'
@@ -9,7 +12,7 @@
 \usepackage[scale=0.75]{geometry}
 \setlength{\hintscolumnwidth}{2.7cm}
 
-\name{Pedro}{Aguiar}
+\name{<%= I18n.t('name.first') %>}{Aguiar}
 \title{Curriculum Vitae}
 \address{Valle de los Olivos 808}{CP. 66350, Santa Catarina}
 \phone[fixed]{+52~(81)~8059~2494}
