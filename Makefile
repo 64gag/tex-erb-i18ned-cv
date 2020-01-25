@@ -5,17 +5,21 @@ all: eng-europass.pdf fra-europass.pdf spa.pdf
 install-deps:
 	-mkdir -p ~/texmf/tex/latex/
 	-git clone git@github.com:paguiar/europecv2013.git ~/texmf/tex/latex/europecv2013
-	-sudo apt-get install ghostscript texlive-latex-base
+	-sudo apt-get install ghostscript texlive-latex-base ruby
 
-%.pdf: %.tex
-	pdflatex $<
+%.pdf.tex: %.pdf.tex.erb
+	erb -T - $< > $@
+
+%.pdf: final_basename = $(basename $(basename $(notdir $<)))
+%.pdf: %.pdf.tex
+	pdflatex -jobname=$(final_basename) $<
 	#bibtex $(basename $<)
-	pdflatex $<
-	gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH -sOutputFile="$(basename $<)-compressed.pdf" $@
+	pdflatex -jobname=$(final_basename) $<
+	gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH -sOutputFile="$(final_basename)-compressed.pdf" $@
 
 .PHONY: clean
 clean: clean-soft
-	-rm -rf *.pdf
+	-rm -rf *.pdf *.pdf.tex
 
 .PHONY: clean-soft
 clean-soft:
