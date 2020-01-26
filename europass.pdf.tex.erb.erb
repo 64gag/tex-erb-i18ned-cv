@@ -2,7 +2,7 @@
   require 'i18n'
 
   I18n.load_path << Dir[File.expand_path("locales") + "/*.yml"]
-  I18n.default_locale = :fr
+  I18n.default_locale = :CV_LOCALE
 
   def generate_section_content(section:)
     text = ''
@@ -20,10 +20,10 @@
     text
   end
 -%>
-\documentclass[helvetica,french,logo,notitle,totpages,utf8]{europecv2013}
+\documentclass[helvetica,<%= I18n.t('ecv.language') -%>,logo,notitle,totpages,utf8]{europecv2013}
 \usepackage{graphicx}
 \usepackage[a4paper,top=1.2cm,left=1.2cm,right=1.2cm,bottom=2.5cm]{geometry}
-\usepackage[french]{babel}
+\usepackage[<%= I18n.t('ecv.language') -%>]{babel}
 \usepackage[T1]{fontenc}
 \usepackage{ifpdf}
 \usepackage{url}
@@ -40,7 +40,7 @@
 \ecvgender{<%= I18n.t('personal.gender') %>}
 \ecvpicture[width=2cm]{picture.png}
 
-\ecvfootnote{<%= I18n.t('ecv.footnote') %>}
+\ecvfootnote{<%= I18n.t('ecv.footnote') %> | \href{http://europass.cedefop.europa.eu}{http://europass.cedefop.europa.eu}}
 
 \begin{document}
 \selectlanguage{<%= I18n.t('ecv.language') %>}

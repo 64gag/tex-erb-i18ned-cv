@@ -1,11 +1,16 @@
 .PHONY: all
-all: en-europass.pdf fr-europass.pdf es.pdf
+all: fr-europass.pdf
 
 .PHONY: install-deps
 install-deps:
 	-mkdir -p ~/texmf/tex/latex/
 	-git clone git@github.com:paguiar/europecv2013.git ~/texmf/tex/latex/europecv2013
 	-sudo apt-get install ghostscript texlive-latex-base ruby
+
+%-europass.pdf.tex.erb: locale = $(shell echo $@ | cut -c 1-2)
+%-europass.pdf.tex.erb: europass.pdf.tex.erb.erb
+	echo $(locale)
+	sed "s/CV_LOCALE/$(locale)/" $< > $@
 
 # TODO Check specific yml for given language (and not all of them)
 %.pdf.tex: %.pdf.tex.erb locales/*.yml
@@ -20,8 +25,8 @@ install-deps:
 
 .PHONY: clean
 clean: clean-soft
-	-rm -rf *.pdf *.pdf.tex
+	-rm -rf *.pdf
 
 .PHONY: clean-soft
 clean-soft:
-	-rm -rf *.ps *.log *.dvi *.aux *.*% *.lof *.lop *.lot *.toc *.idx *.ilg *.ind *.bbl *.blg *.out
+	-rm -rf *.ps *.log *.dvi *.aux *.*% *.lof *.lop *.lot *.toc *.idx *.ilg *.ind *.bbl *.blg *.out *.pdf.tex *.pdf.tex.erb
