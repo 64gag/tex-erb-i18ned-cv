@@ -14,7 +14,11 @@
     I18n.t("#{section}.categories").each do |category|
       text += "\\ecvitem[10pt]{#{category[:name]}} {"
       category[:entries].each do |entry|
-        text += "\\textbf{- #{entry[:name]}:} #{entry[:details]} \\par"
+        unless entry[:details].empty?
+          text += "\\textbf{- #{entry[:name]}:} #{entry[:details]}\\par"
+        else
+          text += "\\textbf{- #{entry[:name]}.}\\par"
+        end
       end
 
       text += "}"

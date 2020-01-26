@@ -149,10 +149,10 @@ en:
     categories:
         - name: 'Academic awards'
           entries:
-            - name: 'Awarded by the Roberto Rocca Education Program from 2014 to 2015:'
+            - name: 'Awarded by the Roberto Rocca Education Program from 2014 to 2015'
               details: 'The program is an initiative to provide scholarships to talented undergraduate and graduate students of engineering and the applied sciences in selected countries. \href{http://www.robertorocca.org/en/}{Program homepage: http://www.robertorocca.org/en/}.'
 
-            - name: 'Graduated \emph{Cum Laude} from the Engineering school.'
+            - name: 'Graduated \emph{Cum Laude} from the Engineering school'
               details: ''
 
         - name: 'Extracurricular activities'
