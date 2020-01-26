@@ -3,6 +3,7 @@ fr:
   ecv:
     language: 'french'
     footnote: '© Union Européenne, 2002-2013'
+
   contact:
     name:
       first: 'Pedro'
@@ -12,14 +13,17 @@ fr:
       landline: '-'
       mobile: '(+33) 07 6931 8460'
     email: 'paguiar32@gmail.com'
+
   personal:
     date_of_birth: '10/05/1992'
     gender: 'Masculin'
     nationality: 'Mexicain'
+
   position:
     section_name: 'EMPLOI RECHERCHÉ'
     name: 'Développeur embarqué'
     motivation: ''
+
   professional:
     section_name: 'EXPÉRIENCE PROFESSIONNELLE'
     entries:
@@ -28,46 +32,55 @@ fr:
         organization: 'Centre de la conception de l''innovation et de l''emballage - ABRE'
         url: 'http://www.centroabre.com'
         description: 'Activités de gestion de projet telles que la définition des horaires (diagrammes de Gantt), délimitant des projets par buts / livrables, de faire des propositions d''affaires à des clients, négocier les détails, le suivi de l''avancement du projet, contact consultants, la gestion des budgets et la divulgation des résultats.'
+
       - date: '2014 -- 2015'
         position: 'Stagiaire'
         organization: 'Centre de la conception de l''innovation et de l''emballage - ABRE'
         url: 'http://www.centroabre.com'
         description: 'Rédaction des résultats du projet rapports et autres documents techniques. Certains intervention dans les projets de l''industrie. Recherche et explorations technologiques mineures, de développement et de configuration de logiciels. Interaction avec la clientèle (téléphone, courriel), l''écriture des documents obligatoires pour soutenir la gestion de projet et la fabrication des présentations de vente pour nos projets.'
+
       - date: '2014'
         position: 'Assistant de recherche externe'
         organization: 'Département d''ingénierie UDEM'
         url: 'http://udem.edu'
         description: 'Exploration pour justifier l''acquisition de drones par l''université. Le projet a abouti à l''université d''obtenir trois drones, qui, malheureusement, n''a pas été appliqué en raison d''un manque de ressources désignées pour leur exploitation. Pendant le projet, je réunis une base importante de jargon commun de drone, logiciels, composants, applications potentielles, etc. Je l''ai également piloté manuellement un drone une couple de fois. J''ai aussi un couple d''accidents d''expérience.'
+
       - date: '2014'
         position: 'Stagiaire'
         organization: 'Laboratoire de Conception et d''Intégration des Systèmes'
         url: 'http://lcis.grenoble-inp.fr'
         description: 'Le travail pendant 4,5 mois séjour à Valence qui a abouti à l''élaboration et la mise en œuvre d''un algorithme de l''accélération GPU pour résoudre le problème consistant à vision stéréoscopique (pensée vers l''application sur un système de véhicule autonome). Les travaux sur la lecture des images à partir d''un couple de caméras utilisant deux cartes différentes STM32 a également été réalisée sur: le code MCU a été complètement pilotée par interruptions. Les langages de programmation utilisés: C, C++, GLSL. Le projet consistait à: I2C, DCMI, DMA, SPI, OpenGL, debian, politiques d''ordonnancement de Linux en temps réel.'
+
       - date: '2014'
         position: 'Stagiaire'
         organization: 'Véhicule autonome UDEM'
         url: 'http://udem.edu'
         description: 'La conception une système de direction de type "drive-by-wire"; mécaniques (les engrenages, les chaînes, les flèches, etc.) et électroniques (les microcontrôleurs, les régulateurs, les émetteurs-récepteurs, etc) composantes sélection et l''achat; Microcontrôleurs PIC et la programmation d''un Raspberry et l''intégration dans un réseau CAN; modélisation et la simulation du véhicule et de son environnement pour tester des algorithmes de vision par ordinateur. Les langages de programmation utilisés: C, C++, Java, Matlab, Simulink, Lua. Le projet comprenait: UART, PWM, I2C, CAN, TCP / IP, SSH, debian.'
+
       - date: '2013'
         position: 'Stagiaire'
         organization: 'Fukushima Lab, Tokyo Institute of Technology'
         url: 'http://www.3mech.titech.ac.jp/ma\_hirose/ma\_hirose\_e.html'
         description: 'Le travail à distance (des réunions via Skype) consistant en la conception, le développement et la mise en œuvre de logiciels distribués pour un robot de service simulé. Le projet appliqué robotique middleware (spécifiquement RT-Middleware et ROS, connecté via les websockets) et simulateurs (spécifiquement V-REP et gazebo) pour développer le logiciel qui ferait un robot de service réagir aux commandes visuelles (détectée en utilisant OpenCV) pour naviguer à travers son environnement. Les langages de programmation utilisés: C, C++, Java, lua (un avantage de l''utilisation de middleware est que vous pouvez facilement casser une tâche à travers différents programmes, même si elles sont écrites dans différents langages de programmation). Le projet comprenait la vision par ordinateur et le robot cinématique directe / inverse.'
+
       - date: '2010 -- 2014'
         position: 'Service des bourses d''études'
         organization: 'Académique vice-présidence UDEM'
         url: 'http://udem.edu'
         description: 'Proposition, conception et mise en œuvre de solutions pour les différents problèmes de traitement des données: plateforme de collaboration WLAN (HTML5, AJAX), de plateforme de traçage pour la planification stratégique (PHP, MySQL), les interfaces entre les feuilles Excel et les formulaires HTML (javascript), la génération automatique de documents à partir d''une base de données (VBA), parmi d''autres solutions similaires de technologie d''information.'
+
       - date: '2013'
         position: 'Assistant de recherche'
         organization: 'Département d''ingénierie UDEM'
         url: 'http://udem.edu'
         description: 'Travailler pour soutenir la recherche de le Dr. Santiago Cruz sur les vibrations mécaniques. Dr Cruz a développé un nouvel algorithme pour approcher la solution de la vibration des structures appliquant la méthode des éléments finis et transformées de Laplace. L''intervention a consisté à améliorer la modularité du logiciel pour être en mesure de mettre en œuvre les tests unitaires et de valider l''algorithme sur différents problèmes. J''ai également ajouté la fonctionnalité de tracer et de simuler les résultats par le dessin et l''animation des graphiques et les structures vibrantes. Langage de programmation utilisé: Matlab.'
+
       - date: '2012'
         position: 'Concurrent'
         organization: 'The Freescale Cup Team'
         url: ''
         description: 'Concours du suiveur de ligne consisté à la conception de la voiture à petite échelle organisée par Freescale Semiconductor et Continental Automotive. Le projet a consisté à concevoir le circuit électronique d''interface avec les composants et la programmation MPC5604B conseil d''administration de Freescale à lire une caméra linéaire et exploiter les servomoteurs. Les langages de programmation utilisés: C. Le projet comprenait: ADC, PWM.'
+
   education:
     section_name: 'ÉDUCATION ET FORMATION'
     entries:
@@ -75,15 +88,18 @@ fr:
         program: 'Ingénieur Mécatronique'
         institution: 'Université de Monterrey (UDEM)'
         extra: 'Diplômé \emph{Cum Laude}'
+
       - date: '2008 -- 2010'
         program: 'Technicien Informatique'
         institution: 'CBTis 41'
         extra: ''
+
   languages:
     section_name: 'LANGUES'
     english: 'Anglais'
     spanish: 'Espagnol'
     french: 'Français'
+
   skills:
     section_name: 'COMPÉTENCES PERSONNELLES'
     categories:
@@ -91,40 +107,55 @@ fr:
           entries:
             - name: 'Interaction avec les clients'
               details: 'Je l''ai appris des façons correctes de communiquer avec les clients au cours de mon stage et la période de travail au ABRE.'
+
         - name: 'Compétences liées à l’emploi'
           entries:
             - name: 'La programmation'
               details: 'C, C++, javascript, PHP, assembleur, shell, VBA, Java, ruby, lua, GAS. J''ai appris de programmation en participant dans les communautés de homebrew et open source (j''ai commencé quand je suis âgé de 13 ans), mais ont formalisé mes connaissances avec les bonnes pratiques de la ingénierie du logiciel en lisant quelques livres et articles sur le sujet.'
+
             - name: 'MCUs y PLCs'
               details: 'Microchip, STM32, Freescale, Festo.'
+
             - name: 'Robotique'
               details: 'RT-Middleware, ROS, v-rep, gazebo.'
+
             - name: 'Vision par ordinateur'
               details: 'OpenCV, Computer Vision Toolbox.'
+
             - name: 'Numerique'
               details: 'MATLAB, GNU Octave, Scilab.'
+
             - name: 'CAD'
               details: 'ProEngineer/CREO, Autodesk Inventor, NX.'
+
             - name: 'Gestion de versions'
               details: 'git, svn.'
+
             - name: 'GPU'
               details: 'OpenGL.'
+
             - name: 'Administration système'
               details: 'Linux (mon principal OS depuis 2006), les réseaux, les protocoles sur Internet, des serveurs, des systèmes d''information, la cryptographie, les architectures informatiques. Je lis et apprends sur ces technologies régulièrement. [c]make, gcc, g ++, git, vim, javac, ssh, netcat, etc.'
+
         - name: 'Compétences informatiques'
           entries:
             - name: 'Documents'
               details: '\LaTeX, GoogleDocs, Microsoft Office. Je suis un utilisateur avancé de Google Docs et Microsoft Office, au point de l''application Google Apps Script / Visual Basic pour Applications pour des besoins très spécifiques.'
+
             - name: 'Multimedia'
               details: 'Gimp, Audacity, Blender (élémentaire). J''ai appris à faire quelques usage général, des tâches et des termes communs après avoir fait face constamment la nécessité de faire un peu de photo / audio / vidéo édition de base pour l''école ou des projets personnels.'
+
             - name: 'Web'
               details: 'HTML, CSS, Flash, SQL, WebGL, apache, AWS. Je sais comment configurer et publier des sites et avoir une expérience sur les exécuter sur le service Amazon EC2, je officialisé la plupart de mes connaissances en prenant un MOOC sur SAAS.'
+
         - name: 'Autres compétences'
           entries:
             - name: 'Lecture technique'
               details: 'La lecture et l''application de la documentation très dense et technique.'
+
             - name: 'Compétences de gestion du temps'
               details: 'Je suis occupé avec de nombreuses activités et responsabilités depuis son arrivée à Monterrey pour étudier collège (sans mes parents); me forçant à réussir à mieux gérer le temps. Ces compétences de gestion du temps moi ont grandement aidé dans tous les aspects de ma vie.'
+
   additional:
     section_name: 'INFORMATION COMPLÉMENTAIRE'
     categories:
@@ -132,13 +163,17 @@ fr:
           entries:
             - name: 'Remise par le Programme d''éducation Rocca Roberto de 2014 à 2015'
               details: 'Le programme est une initiative visant à fournir des bourses aux étudiants et diplômés talentueux du génie et des sciences appliquées dans les pays sélectionnés. \href{http://www.robertorocca.org/en/}{Program homepage: http://www.robertorocca.org/en/}.'
+
             - name: 'Diplômé \emph{Cum Laude} de l''école d''ingénieurs'
               details: ''
+
         - name: ''
           entries:
             - name: 'Expérience d''enseignement'
               details: 'une année de volontariat en tant que professeur dans un lycée polytechnique locale enseignement de la physique et de la conception mécanique assistée par ordinateur. Groupes d''une moyenne de 40 élèves chacune.'
+
             - name: 'Secrétaire de la section étudiante "SAE"'
               details: 'un an de l''organisation d''événements (visites industrielles, cours, etc.) pour la communauté des étudiants en génie l''UDEM.'
+
             - name: 'Groupe de l''Église'
               details: 'trois ans de coordination des activités de formation et de loisirs pour les enfants avec un âge moyen de 10 ans.'

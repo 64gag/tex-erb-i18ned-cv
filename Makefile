@@ -1,5 +1,5 @@
 .PHONY: all
-all: fr-europass.pdf
+all: en-europass.pdf fr-europass.pdf
 
 .PHONY: install-deps
 install-deps:
