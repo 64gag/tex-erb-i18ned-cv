@@ -1,3 +1,25 @@
+<%-
+  require 'i18n'
+
+  I18n.load_path << Dir[File.expand_path("locales") + "/*.yml"]
+  I18n.default_locale = :fr
+
+  def generate_section_content(section:)
+    text = ''
+    text += "\\ecvsection{#{I18n.t("#{section}.section_name")}}"
+
+    I18n.t("#{section}.categories").each do |category|
+      text += "\\ecvitem[10pt]{#{category[:name]}} {"
+      category[:entries].each do |entry|
+        text += "\\textbf{- #{entry[:name]}:} #{entry[:details]} \\par"
+      end
+
+      text += "}"
+    end
+
+    text
+  end
+-%>
 \documentclass[helvetica,french,logo,notitle,totpages,utf8]{europecv2013}
 \usepackage{graphicx}
 \usepackage[a4paper,top=1.2cm,left=1.2cm,right=1.2cm,bottom=2.5cm]{geometry}
@@ -8,136 +30,63 @@
 \usepackage{hyperref}
 \usepackage{graphicx}
 
-\ecvlastname{Aguiar}
-\ecvfirstname{Pedro}
-\ecvaddress{808, Valle de los Olivos, Nuevo Leon, México}
-\ecvtelephone[(+52) 1 81 8059 2494]{(+52) 1 81 8280 8124}
-\ecvemail{paguiar32@gmail.com}
-\ecvnationality{Mexicain}
-\ecvdateofbirth{10/05/1992}
-\ecvgender{Masculin}
+\ecvlastname{<%= I18n.t('contact.name.last') %>}
+\ecvfirstname{<%= I18n.t('contact.name.first') %>}
+\ecvaddress{<%= "#{I18n.t('contact.address')}" %>}
+\ecvtelephone[<%= I18n.t('contact.phone.landline') %>]{<%= I18n.t('contact.phone.mobile') %>}
+\ecvemail{<%= I18n.t('contact.email') %>}
+\ecvnationality{<%= I18n.t('personal.nationality') %>}
+\ecvdateofbirth{<%= I18n.t('personal.date_of_birth') %>}
+\ecvgender{<%= I18n.t('personal.gender') %>}
 \ecvpicture[width=2cm]{picture.png}
 
-\ecvfootnote{© Union européenne, 2002-2013 | http://europass.cedefop.europa.eu}
+\ecvfootnote{<%= I18n.t('ecv.footnote') %>}
 
 \begin{document}
-\selectlanguage{french}
+\selectlanguage{<%= I18n.t('ecv.language') %>}
 
 \begin{europecv}
 \ecvpersonalinfo[10pt]
 
-\ecvposition{EMPLOI RECHERCHÉ}{Développeur embarqué}
+\ecvposition{<%= I18n.t('position.section_name') %>}{<%= I18n.t('position.name') %>}
 
 % ----------------------------------------------------------------- %
 
-\ecvsection{EXPÉRIENCE PROFESSIONNELLE}
+\ecvsection{<%= I18n.t('professional.section_name') %>}
 
-\ecvworkexperience{juin 2015 -- présent}{Ingénieur de projet}{Centre de la conception de l'innovation et de l'emballage - ABRE}{\href{http://www.centroabre.com}{http://www.centroabre.com}}
+<%- I18n.t('professional.entries').each do |pro_entry| -%>
+
+\ecvworkexperience{<%= pro_entry[:date] %>}{<%= pro_entry[:position] %>}{<%= pro_entry[:organization] %>}{\href{<%= pro_entry[:url] %>}{<%= pro_entry[:url] %>}}
 {
-Activités de gestion de projet telles que la définition des horaires (diagrammes de Gantt), délimitant des projets par buts / livrables, de faire des propositions d'affaires à des clients, négocier les détails, le suivi de l'avancement du projet, contact consultants, la gestion des budgets et la divulgation des résultats.
+<%= pro_entry[:description] %>
 }
 
-\ecvworkexperience{2014 -- 2015}{Stagiaire}{Centre de la conception de l'innovation et de l'emballage - ABRE}{\href{http://www.centroabre.com}{http://www.centroabre.com}}
-{
-Rédaction des résultats du projet rapports et autres documents techniques. Certains intervention dans les projets de l'industrie. Recherche et explorations technologiques mineures, de développement et de configuration de logiciels. Interaction avec la clientèle (téléphone, courriel), l'écriture des documents obligatoires pour soutenir la gestion de projet et la fabrication des présentations de vente pour nos projets.
-}
-
-\ecvworkexperience{2014}{Assistant de recherche externe}{Département d'ingénierie UDEM}{\href{http://udem.edu}{http://udem.edu}}
-{
-Exploration pour justifier l'acquisition de drones par l'université. Le projet a abouti à l'université d'obtenir trois drones, qui, malheureusement, n'a pas été appliqué en raison d'un manque de ressources désignées pour leur exploitation. Pendant le projet, je réunis une base importante de jargon commun de drone, logiciels, composants, applications potentielles, etc. Je l'ai également piloté manuellement un drone une couple de fois (basse résolution preuve: \href{https://youtu.be/M4OMHGeACiA}{https://youtu.be/M4OMHGeACiA}), J'ai aussi un couple d'accidents d'expérience.
-}
-
-\ecvworkexperience{2014}{Stagiaire}{Laboratoire de Conception et d'Intégration des Systèmes}{Valence, France, \href{http://lcis.grenoble-inp.fr}{http://lcis.grenoble-inp.fr}}
-{
-Le travail pendant 4,5 mois séjour à Valence qui a abouti à l'élaboration et la mise en œuvre d'un algorithme de l'accélération GPU pour résoudre le problème consistant à vision stéréoscopique (pensée vers l'application sur un système de véhicule autonome). Les travaux sur la lecture des images à partir d'un couple de caméras utilisant deux cartes différentes STM32 a également été réalisée sur: le code MCU a été complètement pilotée par interruptions. Les langages de programmation utilisés: C, C++, GLSL. Le projet consistait à: I2C, DCMI, DMA, SPI, OpenGL, debian, politiques d'ordonnancement de Linux en temps réel.
-}
-
-\ecvworkexperience{2014}{Stagiaire}{Véhicule autonome UDEM}{\href{http://udem.edu}{http://udem.edu}}
-{
-La conception une système de direction de type "drive-by-wire"; mécaniques (les engrenages, les chaînes, les flèches, etc.) et électroniques (les microcontrôleurs, les régulateurs, les émetteurs-récepteurs, etc) composantes sélection et l'achat; Microcontrôleurs PIC et la programmation d'un Raspberry et l'intégration dans un réseau CAN; modélisation et la simulation du véhicule et de son environnement pour tester des algorithmes de vision par ordinateur. Les langages de programmation utilisés: C, C++, Java, Matlab, Simulink, Lua. Le projet comprenait: UART, PWM, I2C, CAN, TCP / IP, SSH, debian.
-}
-
-\ecvworkexperience{2013}{Stagiaire}{Fukushima Lab, Tokyo Institute of Technology}{\href{http://www.3mech.titech.ac.jp/ma_hirose/ma_hirose_e.html}{http://www.3mech.titech.ac.jp/ma\_hirose/ma\_hirose\_e.html}}
-{
-Le travail à distance (des réunions via Skype) consistant en la conception, le développement et la mise en œuvre de logiciels distribués pour un robot de service simulé. Le projet appliqué robotique middleware (spécifiquement RT-Middleware et ROS, connecté via les websockets) et simulateurs (spécifiquement V-REP et gazebo) pour développer le logiciel qui ferait un robot de service réagir aux commandes visuelles (détectée en utilisant OpenCV) pour naviguer à travers son environnement. Les langages de programmation utilisés: C, C++, Java, lua (un avantage de l'utilisation de middleware est que vous pouvez facilement casser une tâche à travers différents programmes, même si elles sont écrites dans différents langages de programmation). Le projet comprenait la vision par ordinateur et le robot cinématique directe / inverse.
-}
-
-\ecvworkexperience{2010 -- 2014}{Service des bourses d'études}{Académique vice-présidence UDEM}{\href{http://udem.edu}{http://udem.edu}}
-{
-Proposition, conception et mise en œuvre de solutions pour les différents problèmes de traitement des données: plateforme de collaboration WLAN (HTML5, AJAX), de plateforme de traçage pour la planification stratégique (PHP, MySQL), les interfaces entre les feuilles Excel et les formulaires HTML (javascript), la génération automatique de documents à partir d'une base de données (VBA), parmi d'autres solutions similaires de technologie d'information.
-}
-
-\ecvworkexperience{2013}{Assistant de recherche}{Département d'ingénierie UDEM}{\href{http://udem.edu}{http://udem.edu}}
-{
-Travailler pour soutenir la recherche de le Dr. Santiago Cruz sur les vibrations mécaniques. Dr Cruz a développé un nouvel algorithme pour approcher la solution de la vibration des structures appliquant la méthode des éléments finis et transformées de Laplace. L'intervention a consisté à améliorer la modularité du logiciel pour être en mesure de mettre en œuvre les tests unitaires et de valider l'algorithme sur différents problèmes. J'ai également ajouté la fonctionnalité de tracer et de simuler les résultats par le dessin et l'animation des graphiques et les structures vibrantes. Langage de programmation utilisé: Matlab.
-}
-
-\ecvworkexperience{2012}{Concurrent}{The Freescale Cup Team}{}
-{
-Concours du suiveur de ligne consisté à la conception de la voiture à petite échelle organisée par Freescale Semiconductor et Continental Automotive. Le projet a consisté à concevoir le circuit électronique d'interface avec les composants et la programmation MPC5604B conseil d'administration de Freescale à lire une caméra linéaire et exploiter les servomoteurs. Les langages de programmation utilisés: C. Le projet comprenait: ADC, PWM.
-}
+<%- end -%>
 
 % ----------------------------------------------------------------- %
 
-\ecvsection{ÉDUCATION ET FORMATION}
+\ecvsection{<%= I18n.t('education.section_name') %>}
 
-\ecveducation{2010 -- 2015}{Ingénieur Mécatronique}{Université de Monterrey (UDEM)}
-{}{Diplômé \emph{Cum Laude}}
+<%- I18n.t('education.entries').each do |ed_entry| -%>
 
-\ecveducation{2008 -- 2010}{Technicien Informatique}{CBTis 41}
-{}{}
+\ecveducation{<%= ed_entry[:date] %>}{<%= ed_entry[:program] %>}{<%= ed_entry[:institution] %>}
+{}{<%= ed_entry[:extra] %>}
+
+<%- end -%>
 
 % ----------------------------------------------------------------- %
 
-\ecvsection{COMPÉTENCES PERSONNELLES}
+\ecvsection{<%= I18n.t('languages.section_name') %>}
 
-\ecvmothertongue[20pt]{Espagnol}
+\ecvmothertongue[20pt]{<%= I18n.t('languages.spanish') %>}
 \ecvlanguageheader
-\ecvlanguage{Anglais}{\ecvCOne}{\ecvCOne}{\ecvCOne}{\ecvCOne}{\ecvCOne}
-\ecvlastlanguage{Français}{\ecvAOne}{\ecvAOne}{}{}{}
+\ecvlanguage{<%= I18n.t('languages.english') %>}{\ecvCOne}{\ecvCOne}{\ecvCOne}{\ecvCOne}{\ecvCOne}
+\ecvlastlanguage{<%= I18n.t('languages.french') %>}{\ecvCOne}{\ecvCOne}{\ecvCOne}{\ecvCOne}{\ecvCOne}
 \ecvlanguagefooter[10pt]
 
-\ecvitem[10pt]{Compétences en communication}{
-- Interaction avec les clients: Je l'ai appris des façons correctes de communiquer avec les clients au cours de mon stage et la période de travail au ABRE.
-}
+<%= generate_section_content(section: 'skills') -%>
 
-\ecvitem[10pt]{Compétences liées à l’emploi}{
-- La programmation: C, C++, javascript, PHP, assembleur, shell, VBA, Java, ruby, lua, GAS. J'ai appris de programmation en participant dans les communautés de homebrew et open source (j'ai commencé quand je suis âgé de 13 ans), mais ont formalisé mes connaissances avec les bonnes pratiques de la ingénierie du logiciel en lisant quelques livres et articles sur le sujet.\par
-- MCUs y PLCs: Microchip, STM32, Freescale, Festo.\par
-- Robotique: RT-Middleware, ROS, v-rep, gazebo.\par
-- Vision par ordinateur: OpenCV, Computer Vision Toolbox.\par
-- Numerique: MATLAB, GNU Octave, Scilab.\par
-- CAD: ProEngineer/CREO, Autodesk Inventor, NX.\par
-- Gestion de versions: git, svn.\par
-- GPU: OpenGL.\par
-- Administration système: Linux (mon principal OS depuis 2006), les réseaux, les protocoles sur Internet, des serveurs, des systèmes d'information, la cryptographie, les architectures informatiques. Je lis et apprends sur ces technologies régulièrement. [c]make, gcc, g ++, git, vim, javac, ssh, netcat, etc.
-}
-
-\ecvitem[10pt]{Compétences informatiques}{
-- Documents: \LaTeX, GoogleDocs, Microsoft Office. Je suis un utilisateur avancé de Google Docs et Microsoft Office, au point de l'application Google Apps Script / Visual Basic pour Applications pour des besoins très spécifiques.\par
-- Multimedia: Gimp, Audacity, Blender (élémentaire). J'ai appris à faire quelques usage général, des tâches et des termes communs après avoir fait face constamment la nécessité de faire un peu de photo / audio / vidéo édition de base pour l'école ou des projets personnels.\par
-- Web: HTML, CSS, Flash, SQL, WebGL, apache, AWS. Je sais comment configurer et publier des sites et avoir une expérience sur les exécuter sur le service Amazon EC2, je officialisé la plupart de mes connaissances en prenant un MOOC sur SAAS.
-}
-
-\ecvitem[10pt]{Autres compétences}{
-- La lecture et l'application de la documentation très dense et technique.\par
-- Compétences de gestion du temps: Je suis occupé avec de nombreuses activités et responsabilités depuis son arrivée à Monterrey pour étudier collège (sans mes parents); me forçant à réussir à mieux gérer le temps. Ces compétences de gestion du temps moi ont grandement aidé dans tous les aspects de ma vie.
-}
-
-% ----------------------------------------------------------------- %
-
-\ecvsection{INFORMATION COMPLÉMENTAIRE}
-
-\ecvitem[10pt]{Récompenses académiques}{
-- Remise par le Programme d'éducation Rocca Roberto de 2014 à 2015: Le programme est une initiative visant à fournir des bourses aux étudiants et diplômés talentueux du génie et des sciences appliquées dans les pays sélectionnés. \href{http://www.robertorocca.org/en/}{Program homepage: http://www.robertorocca.org/en/}.\par
-- Diplômé \emph{Cum Laude} de l'école d'ingénieurs.\par
-}
-
-\ecvitem[10pt]{Activités extra-scolaires}{
-- Expérience d'enseignement: une année de volontariat en tant que professeur dans un lycée polytechnique locale enseignement de la physique et de la conception mécanique assistée par ordinateur. Groupes d'une moyenne de 40 élèves chacune.\par
-- Secrétaire de la section étudiante "SAE": un an de l'organisation d'événements (visites industrielles, cours, etc.) pour la communauté des étudiants en génie l'UDEM.\par
-- Groupe de l'Église: trois ans de coordination des activités de formation et de loisirs pour les enfants avec un âge moyen de 10 ans.
-}
+<%= generate_section_content(section: 'additional') -%>
 
 \end{europecv}
 \end{document}

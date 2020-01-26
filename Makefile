@@ -7,7 +7,8 @@ install-deps:
 	-git clone git@github.com:paguiar/europecv2013.git ~/texmf/tex/latex/europecv2013
 	-sudo apt-get install ghostscript texlive-latex-base ruby
 
-%.pdf.tex: %.pdf.tex.erb
+# TODO Check specific yml for given language (and not all of them)
+%.pdf.tex: %.pdf.tex.erb locales/*.yml
 	erb -T - $< > $@
 
 %.pdf: final_basename = $(basename $(basename $(notdir $<)))
