@@ -1,8 +1,11 @@
 <%-
   require 'i18n'
+  require "i18n/backend/fallbacks"
+  I18n::Backend::Simple.send(:include, I18n::Backend::Fallbacks)
 
   I18n.load_path << Dir[File.expand_path("locales") + "/*.yml"]
   I18n.default_locale = :CV_LOCALE
+  I18n.fallbacks.map(:CV_LOCALE => :common)
 
   def generate_section_content(section:)
     text = ''

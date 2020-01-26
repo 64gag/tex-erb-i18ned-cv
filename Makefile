@@ -10,7 +10,7 @@ install-deps:
 %-europass.pdf.tex.erb: locale = $(shell echo $@ | cut -c 1-2)
 %-europass.pdf.tex.erb: europass.pdf.tex.erb.erb
 	echo $(locale)
-	sed "s/CV_LOCALE/$(locale)/" $< > $@
+	sed "s/CV_LOCALE/$(locale)/g" $< > $@
 
 # TODO Check specific yml for given language (and not all of them)
 %.pdf.tex: %.pdf.tex.erb locales/*.yml

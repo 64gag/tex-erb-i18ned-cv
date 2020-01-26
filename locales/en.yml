@@ -9,10 +9,10 @@ en:
       first: 'P.'
       last: 'Aguiar'
     address: '1 rue Mayen, 38000 Grenoble, France'
+    email: 'paguiar32@gmail.com'
     phone:
       landline: '-'
-      mobile: '(+33) 07 6931 8460'
-    email: 'paguiar32@gmail.com'
+      mobile: '-'
 
   personal:
     date_of_birth: '10/05/1992'
