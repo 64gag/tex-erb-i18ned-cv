@@ -41,7 +41,7 @@ en:
         position: 'R\&D Software Engineer'
         organization: 'Squadrone System'
         url: 'http://www.squadrone-system.com'
-        organization: 'Research on and development of autonomous drones oriented towards industrial applications (focus on the Logistics, Security and Assurance markets). I have worked on software at the embedded and application layers, and also on support projects such as simulation of 3D environments to make design decisions. \textbf{Keywords:} C, C++, python, NuttX, ROS, Gazebo, RTOS, drivers, OpenCV, Linux'
+        description: 'Research on and development of autonomous drones oriented towards industrial applications (focus on the Logistics, Security and Assurance markets). I have worked on software at the embedded and application layers, and also on support projects such as simulation of 3D environments to make design decisions. \textbf{Keywords:} C, C++, python, NuttX, ROS, Gazebo, RTOS, drivers, OpenCV, Linux'
 
       - date: 'Jan 2016 -- Oct 2016'
         position: 'Software Engineer, Consultancy'
