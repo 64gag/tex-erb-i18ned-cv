@@ -39,7 +39,7 @@
 
 \ecvlastname{<%= I18n.t('contact.name.last') %>}
 \ecvfirstname{<%= I18n.t('contact.name.first') %>}
-\ecvaddress{<%= "#{I18n.t('contact.address')}" %>}
+\ecvaddress{<%= I18n.t('contact.address') %>}
 \ecvtelephone[<%= I18n.t('contact.phone.landline') %>]{<%= I18n.t('contact.phone.mobile') %>}
 \ecvemail{<%= I18n.t('contact.email') %>}
 \ecvnationality{<%= I18n.t('personal.nationality') %>}
@@ -63,10 +63,8 @@
 
 <%- I18n.t('professional.entries').each do |pro_entry| -%>
 
-\ecvworkexperience{<%= pro_entry[:date] %>}{<%= pro_entry[:position] %>}{<%= pro_entry[:organization] %>}{\href{<%= pro_entry[:url] %>}{<%= pro_entry[:url] %>}}
-{
-<%= pro_entry[:description] %>
-}
+  \ecvworkexperience{<%= pro_entry[:date] %>}{<%= pro_entry[:position] %>}{<%= pro_entry[:organization] %>}{\href{<%= pro_entry[:url] %>}{<%= pro_entry[:url] %>}}
+  {<%= pro_entry[:description] %>}
 
 <%- end -%>
 
@@ -76,8 +74,8 @@
 
 <%- I18n.t('education.entries').each do |ed_entry| -%>
 
-\ecveducation{<%= ed_entry[:date] %>}{<%= ed_entry[:program] %>}{<%= ed_entry[:institution] %>}
-{}{<%= ed_entry[:extra] %>}
+  \ecveducation{<%= ed_entry[:date] %>}{<%= ed_entry[:program] %>}{<%= ed_entry[:institution] %>}
+  {}{<%= ed_entry[:extra] %>}
 
 <%- end -%>
 
@@ -90,6 +88,8 @@
 \ecvlanguage{<%= I18n.t('languages.english') %>}{\ecvCOne}{\ecvCOne}{\ecvCOne}{\ecvCOne}{\ecvCOne}
 \ecvlastlanguage{<%= I18n.t('languages.french') %>}{\ecvCOne}{\ecvCOne}{\ecvCOne}{\ecvCOne}{\ecvBTwo}
 \ecvlanguagefooter[10pt]
+
+% ----------------------------------------------------------------- %
 
 <%= generate_section_content(section: 'skills') -%>
 
