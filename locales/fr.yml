@@ -14,6 +14,11 @@ fr:
       landline: '-'
       mobile: '-'
 
+  sites:
+    homepage: 'paguiar.net'
+    github: 'paguiar'
+    linkedin: ''
+
   personal:
     date_of_birth: '10/05/1992'
     gender: 'Masculin'
@@ -23,6 +28,11 @@ fr:
     section_name: 'EMPLOI RECHERCHÉ'
     name: 'Développeur embarqué'
     motivation: ''
+
+  interests:
+    section_name: ''
+    title: ''
+    description: 'Soy un Ingeniero en Mecatrónica que, además de haber cumplido y dominado el programa de estudios, también se involucró constantemente en proyectos y actividades paralelas durante mis estudios universitarios. Considero entre mis aptitudes más importantes la capacidad de autoaprendizaje, aplicación de conocimiento para solucionar problemas, organización, trabajo bajo presión y responsabilidad. Mis áreas de experiencia técnica más desarrolladas son la programación en general, los sistemas embebidos, informática y la administración de sistemas Linux. Conocí de cerca el modelo de trabajo de consultoría durante el tiempo en que me desempeñé como Ingeniero de Proyectos y siendo alguien muy interesado por emprender (y con la confianza de mis experiencias exitosas) decido comenzar Realware en mayo del 2016.'
 
   professional:
     section_name: 'EXPÉRIENCE PROFESSIONNELLE'
@@ -96,9 +106,27 @@ fr:
 
   languages:
     section_name: 'LANGUES'
-    english: 'Anglais'
-    spanish: 'Espagnol'
-    french: 'Français'
+    entries:
+      - name: 'Espagnol'
+        mother_tongue: true
+        level_description: 'Langue maternelle'
+        extra: 'Langue maternelle'
+      - name: 'Anglais'
+        level_description: 'Advanced'
+        level_understanding_listening: 'C1'
+        level_understanding_reading: 'C1'
+        level_speaking_interaction: 'C1'
+        level_speaking_production: 'C1'
+        level_writing_user: 'C1'
+        extra: 'TOEFL ITP score of 620 (11/18/2010)'
+      - name: 'Français'
+        level_description: 'Advanced'
+        level_understanding_listening: 'C1'
+        level_understanding_reading: 'C1'
+        level_speaking_interaction: 'C1'
+        level_speaking_production: 'C1'
+        level_writing_user: 'B2'
+        extra: 'en France depuis Octobre 2016'
 
   skills:
     section_name: 'COMPÉTENCES PERSONNELLES'

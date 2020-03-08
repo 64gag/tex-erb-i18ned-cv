@@ -1,0 +1,208 @@
+---
+es:
+  ecv:
+    language: 'spanish'
+    footnote: '© Unión Europea, 2002-2013'
+
+  contact:
+    name:
+      first: 'Pedro'
+      last: 'Aguiar'
+    address: '1 rue Mayen, 38000 Grenoble, France'
+    email: 'paguiar32@gmail.com'
+    phone:
+      landline: '-'
+      mobile: '-'
+
+  sites:
+    homepage: 'paguiar.net'
+    github: 'paguiar'
+    linkedin: ''
+
+  personal:
+    date_of_birth: '10/05/1992'
+    gender: 'Masculino'
+    nationality: 'Mexicano'
+
+  position:
+    section_name: 'Job applied for'
+    name: 'Embedded developer'
+    motivation: ''
+
+  interests:
+    section_name: ''
+    title: ''
+    description: 'Soy un Ingeniero en Mecatrónica que, además de haber cumplido y dominado el programa de estudios, también se involucró constantemente en proyectos y actividades paralelas durante mis estudios universitarios. Considero entre mis aptitudes más importantes la capacidad de autoaprendizaje, aplicación de conocimiento para solucionar problemas, organización, trabajo bajo presión y responsabilidad. Mis áreas de experiencia técnica más desarrolladas son la programación en general, los sistemas embebidos, informática y la administración de sistemas Linux. Conocí de cerca el modelo de trabajo de consultoría durante el tiempo en que me desempeñé como Ingeniero de Proyectos y siendo alguien muy interesado por emprender (y con la confianza de mis experiencias exitosas) decido comenzar Realware en mayo del 2016.'
+
+  professional:
+    section_name: 'Experiencia profesional'
+    entries:
+      - date: 'Oct 2016 -- Presente'
+        position: 'R\&D Software Engineer'
+        organization: ''
+        url: ''
+        organization: 'Research on and development of autonomous drones oriented towards industrial applications (focus on the Logistics, Security and Assurance markets). I have worked on software at the embedded and application layers, and also on support projects such as simulation of 3D environments to make design decisions. \textbf{Keywords:} C, C++, python, NuttX, ROS, Gazebo, RTOS, drivers, OpenCV, Linux'
+
+      - date: 'Jul -- Sept 2016'
+        position: 'Consultor'
+        organization: 'Plataforma de colaboración'
+        description: 'Única persona que trabajó en el proyecto. Sistema de información hecho a la medida del cliente (software vertical). El objetivo es centralizar y sincronizar la información que reciben todos los integrantes de un equipo de trabajo. Autorización, autenticación, archivos adjuntos (S3), etc. Construído sobre una plataforma web, aplicando tecnologías como: apache, MySQL, Ruby on Rails, javascript, CSS, AWS, TLS, etc.'
+
+      - date: 'Ago - Sept 2016'
+        position: 'Consultor'
+        organization: 'Sistema de información Centro ABRE'
+        description: 'Única persona que trabajó en el proyecto. Las tareas incluyeron: concepción, propuesta, documentacion, diseño, programación, configuración del servidor, capacitación, etc. El sistema asiste al personal administrativo, técnico y gerencial del Centro, permitiéndoles dar al cliente excelentes tiempos de respuesta y optimizando cómo comparten información entre sí. Genera: bases de datos de clientes, cotizaciones, reportes de ventas, reportes para el cliente.'
+
+      - date: '2006--Presente'
+        position: 'Computólogo'
+        organization: 'Hobby/Autoaprendizaje'
+        description: 'Conocimientos de programación, redes, protocolos de internet, servidores, sistemas de información, criptografía, UNIX/Linux, arquitecturas de computadoras. Participación activa en comunidades de homebrew y software de código abierto. Experiencia en programación de bajo nivel de abstracción y uso Linux como mi SO. Investigo y aprendo de este tipo de tecnologías regularmente.'
+
+      - date: 'Jun -- Dic 2015'
+        position: 'Ing. de proyectos'
+        organization: '\small Centro de Innovación en Diseño de Empaque ABRE'
+        description: 'Actividades de administración de proyectos como definir cronogramas (diagramas de Gantt); delimitar proyectos en metas/entregables específicos, medibles, alcanzables, relevantes y restringidas en el tiempo; hacer propuestas económicas a los clientes del Centro y negociar los detalles; dar seguimiento al progreso del proyecto; contactar a los consultores; administrar presupuestos y reportar los resultados.'
+
+      - date: 'Abr -- Ago 2014'
+        position: 'Practicante'
+        organization: '\small Laboratoire de Conception et d''Intégration des Systèmes'
+        description: 'Estancia en Francia. Sistema embebido de visión para control de un vehículo. Integración y comunicación de cámaras con un STM32 utilizando I2C, DCMI y DMA. Comunicación con un Raspberry mediante SPI. Procesamiento de imágenes acelerado utilizando el GPU del Raspberry y políticas de real-time scheduling de Linux.'
+
+      - date: 'Ago 2013 -- May 2014'
+        position: 'Practicante'
+        organization: 'Vehículo Autónomo Supermilla'
+        description: 'Participación en el diseño del mecanismo, selección y compra de componentes para la dirección drive-by-wire; integración y programación de microcontroladores (UART, PWM, I2C) y Raspberry en una red CAN; selección de componentes electrónicos y microcontroladores; visión computarizada (modelado y simulación del vehículo y su entorno, programación). Proyecto estudiantil, no implementado.'
+
+      - date: 'Sept 2014 -- May 2015'
+        position: 'Practicante'
+        organization: '\small Centro de Innovación en Diseño de Empaque ABRE'
+        description: 'Tareas técnicas como reportes de resultados de proyectos, redacción de documentos técnicos, algunas participaciones en proyectos con empresas, investigaciones/exploraciones tecnológicas, configuración de herramientas y desarrollo de software. Tareas administrativas de interacción con clientes (teléfono e email), elaboración de formatos para documentos y elaboración de presentaciones.'
+
+      - date: 'Ago 2012 -- May 2013'
+        position: 'Practicante'
+        organization: 'Fukushima Lab. Tokyo Institute of Technology'
+        description: 'Trabajo a distancia (videoconferencias). Diseño, desarrollo e implementación de software disftribuido para robots de servicio. Diseño, desarrollo e implementación de software distribuido utilizando middleware (RT-Middleware y ROS, comunicados por websockets) para controlar un robot de servicio (simulado en V-REP). El robot reacciona a señalamientos detectados por una cámara.'
+
+      - date: 'Ago 2010 -- May 2014'
+        position: 'Becario'
+        organization: 'Vicerrectoría Académica UDEM'
+        description: 'Propuesta e implementación de soluciones a diferentes problemas de manejo de información. Plataforma WLAN de colaboración (HTML, AJAX), plataforma de seguimiento de planeación (PHP, MySQL), recolección y procesamiento automático de inormación de sitios web (javascript), interface entre Excel y formularios HTML (javascript), generación de documentos desde una base de datos (VBA).'
+
+      - date: '2013'
+        position: 'Colaborador'
+        organization: 'Investigación Vibraciones Mecánicas'
+        description: 'Algoritmo novedoso desarrollado en MATLAB por el Dr. Santiago Cruz para aproximar soluciones de vibraciones de estructuras utilizando el método de elementos finitos y la transformada de Laplace. Modificaciones al software para hacerlo modular, graficar y simular los resultados dibujando y animando las gráficas y sus estructuras.'
+
+      - date: 'Aug 2010 -- May 2012'
+        position: 'Concursante'
+        organization: 'Equipo de la The Freescale Cup'
+        description: 'Concurso de diseño de carros seguidores de línea a escala organizado por Freescale Semiconductor y Continental Automotive Mexico. Programación en C de la tarjeta MPC5604B de Freescale Semiconductor, integración de cámara lineal (ADC) y servomotores (PWM).'
+
+  education:
+    section_name: 'Education and training'
+    entries:
+      - date: '2010 -- 2015'
+        program: 'Mechatronics Engineer'
+        institution: 'Universidad de Monterrey (UDEM)'
+        extra: 'Graduated \emph{Cum Laude}'
+      - date: '2008 -- 2010'
+        program: 'Informatics Technician'
+        institution: 'CBTis 41'
+        extra: 'First of generation'
+
+  languages:
+    section_name: 'Languages'
+    entries:
+      - name: 'Español'
+        mother_tongue: true
+        level_description: 'Lengua materna'
+        extra: 'Lengua materna'
+      - name: 'Inglés'
+        level_description: 'Avanzado'
+        level_understanding_listening: 'C1'
+        level_understanding_reading: 'C1'
+        level_speaking_interaction: 'C1'
+        level_speaking_production: 'C1'
+        level_writing_user: 'C1'
+        extra: 'TOEFL ITP score of 620 (11/18/2010)'
+      - name: 'Francés'
+        level_description: 'Avanzado'
+        level_understanding_listening: 'C1'
+        level_understanding_reading: 'C1'
+        level_speaking_interaction: 'C1'
+        level_speaking_production: 'C1'
+        level_writing_user: 'B2'
+        extra: 'Vivo en Francia desde Octubre 2016'
+
+  skills:
+    section_name: 'Habilidades personales'
+    categories:
+        - name: 'Comunicación'
+          entries:
+            - name: 'Interacción profesional (clientes)'
+              details: 'I have learnt correct ways of communicating with clients during my internship and work period at ABRE.'
+
+        - name: 'Job-related skills'
+          entries:
+            - name: 'Programming'
+              details: 'C, C++, ruby, javascript, PHP, assembly, shell, VBA, Java, lua, GAS.'
+            - name: 'MCUs and PLCs'
+              details: 'Microchip, STM32, Freescale, Festo.'
+            - name: 'Robotics'
+              details: 'RT-Middleware, ROS, v-rep, Gazebo.'
+            - name: 'Computer vision'
+              details: 'OpenCV, Computer Vision Toolbox.'
+            - name: 'Numeric'
+              details: 'MATLAB, GNU Octave, Scilab.'
+            - name: 'CAD'
+              details: 'ProEngineer/CREO, Autodesk Inventor, NX.'
+            - name: 'Version control'
+              details: 'git, svn.'
+            - name: 'GPU'
+              details: 'OpenGL.'
+            - name: 'Systems administration'
+              details: 'Linux (OS of choice 2006), networks, internet protocols, servers, information systems, cryptography, computer architectures. I read and learn about these technologies regularly. [c]make, gcc, g++, git, vim, javac, ssh, netcat, etc.'
+
+        - name: 'Multimedia, computer skills'
+          entries:
+            - name: 'Documents'
+              details: '\LaTeX, GoogleDocs (including GAS), Microsoft Office (including VBA).'
+
+            - name: 'Multimedia'
+              details: 'Gimp, Audacity, Blender (basic). I learnt to do many general purpose, common tasks and terminology after constantly facing the need to do some basic photo/audio/video edition for school or personal projects.'
+
+            - name: 'Web'
+              details: 'HTML, CSS, Flash, SQL, WebGL, apache, AWS. I know how to setup and publish sites and have some of them running on Amazon''s EC2, I formalized most of my knowledge by taking a MOOC on Software as a Service.'
+
+        - name: 'Other skills'
+          entries:
+            - name: 'Autodidact'
+              details: 'Learnt to code by participating at homebrew, open source communities at the age of 13 (example).'
+
+            - name: 'Researching skills'
+              details: 'reading and applying scientifical (papers, books) and technical documentation (datasheets, reference manuals).'
+
+            - name: 'Time management skills'
+              details: 'I have dealt with many activities and responsabilities since moving to Monterrey to study college (without my parents); forcing me to get better at managing time. These time management skills have helped me greatly in every aspect of my life.'
+
+  additional:
+    section_name: 'Additional information'
+    categories:
+        - name: 'Academic awards'
+          entries:
+            - name: 'Awarded by the Roberto Rocca Education Program from 2014 to 2015'
+              details: 'The program is an initiative to provide scholarships to talented undergraduate and graduate students of engineering and the applied sciences in selected countries. \href{http://www.robertorocca.org/en/}{Program homepage: http://www.robertorocca.org/en/}.'
+
+            - name: 'Graduated \emph{Cum Laude} from the Engineering school'
+              details: ''
+
+        - name: 'Extracurricular activities'
+          entries:
+            - name: 'Teaching experience'
+              details: 'a year of volunteering as a professor at a local Polytechnic High School teaching Physics and Computer Aided Mechanical Design. Groups of an average of 40 students each.'
+
+            - name: 'Secretary of the Society of Automotive Engineers student chapter'
+              details: 'a year of organizing events (industrial visits, courses, etc) for the UDEM engineering students community.'
+
+            - name: 'Church group'
+              details: 'three years coordinating training and recreation activities for children with an average age of 10 years old.'

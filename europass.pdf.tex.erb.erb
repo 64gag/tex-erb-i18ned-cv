@@ -26,6 +26,22 @@
 
     text
   end
+  def str2ecv(str)
+    case str
+    when "A1"
+      '\ecvAOne'
+    when "A2"
+      '\ecvATwo'
+    when "B1"
+      '\ecvBOne'
+    when "B2"
+      '\ecvBTwo'
+    when "C1"
+      '\ecvCOne'
+    when "C2"
+      '\ecvCTwo'
+    end
+  end
 -%>
 \documentclass[helvetica,<%= I18n.t('ecv.language') -%>,logo,notitle,totpages,utf8]{europecv2013}
 \usepackage{graphicx}
@@ -81,12 +97,33 @@
 
 % ----------------------------------------------------------------- %
 
+
 \ecvsection{<%= I18n.t('languages.section_name') %>}
 
-\ecvmothertongue[20pt]{<%= I18n.t('languages.spanish') %>}
+<%-
+  languages_entries = I18n.t('languages.entries').dup
+  mother_tongues = languages_entries.keep_if {|e| e[:mother_tongue]}
+  mother_tongues_str = mother_tongues.map {|m| m[:name]}.join(", ")
+-%>
+  \ecvmothertongue[20pt]{<%= mother_tongues_str %> }
+
+<%-
+  languages_entries = I18n.t('languages.entries').dup
+  non_mother_tongues = languages_entries.keep_if {|e| not e[:mother_tongue]}
+-%>
+
 \ecvlanguageheader
-\ecvlanguage{<%= I18n.t('languages.english') %>}{\ecvCOne}{\ecvCOne}{\ecvCOne}{\ecvCOne}{\ecvCOne}
-\ecvlastlanguage{<%= I18n.t('languages.french') %>}{\ecvCOne}{\ecvCOne}{\ecvCOne}{\ecvCOne}{\ecvBTwo}
+<%- non_mother_tongues.each do |entry| -%>
+
+  \ecvlanguage{<%= entry[:name] %>}
+  {<%= str2ecv(entry[:level_understanding_listening]) %>}
+  {<%= str2ecv(entry[:level_understanding_reading]) %>}
+  {<%= str2ecv(entry[:level_speaking_interaction]) %>}
+  {<%= str2ecv(entry[:level_speaking_production]) %>}
+  {<%= str2ecv(entry[:level_writing_user]) %>}
+
+<%- end -%>
+
 \ecvlanguagefooter[10pt]
 
 % ----------------------------------------------------------------- %

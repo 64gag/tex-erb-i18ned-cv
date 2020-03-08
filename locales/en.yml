@@ -14,8 +14,13 @@ en:
       landline: '-'
       mobile: '-'
 
+  sites:
+    homepage: 'paguiar.net'
+    github: 'paguiar'
+    linkedin: ''
+
   personal:
-    date_of_birth: '10/05/1992'
+    date_of_birth: 'May 10th, 1992'
     gender: 'Male'
     nationality: 'Mexican'
 
@@ -24,6 +29,11 @@ en:
     name: 'Embedded developer'
     motivation: ''
 
+  interests:
+    section_name: ''
+    title: ''
+    description: 'Soy un Ingeniero en Mecatrónica que, además de haber cumplido y dominado el programa de estudios, también se involucró constantemente en proyectos y actividades paralelas durante mis estudios universitarios. Considero entre mis aptitudes más importantes la capacidad de autoaprendizaje, aplicación de conocimiento para solucionar problemas, organización, trabajo bajo presión y responsabilidad. Mis áreas de experiencia técnica más desarrolladas son la programación en general, los sistemas embebidos, informática y la administración de sistemas Linux. Conocí de cerca el modelo de trabajo de consultoría durante el tiempo en que me desempeñé como Ingeniero de Proyectos y siendo alguien muy interesado por emprender (y con la confianza de mis experiencias exitosas) decido comenzar Realware en mayo del 2016.'
+
   professional:
     section_name: 'Work experience'
     entries:
@@ -31,49 +41,49 @@ en:
         position: 'R\&D Software Engineer'
         organization: 'Squadrone System'
         url: 'http://www.squadrone-system.com'
-        organization: 'Research on and development of autonomous drones oriented towards industrial applications (focus on the Logistics, Security and Assurance markets). I have worked on software at the embedded and application layers, and also on support projects such as simulation of 3D environments to make design decisions.\par \textbf{Keywords:} C, C++, python, NuttX, ROS, Gazebo, RTOS, drivers, OpenCV, Linux'
+        organization: 'Research on and development of autonomous drones oriented towards industrial applications (focus on the Logistics, Security and Assurance markets). I have worked on software at the embedded and application layers, and also on support projects such as simulation of 3D environments to make design decisions. \textbf{Keywords:} C, C++, python, NuttX, ROS, Gazebo, RTOS, drivers, OpenCV, Linux'
 
       - date: 'Jan 2016 -- Oct 2016'
         position: 'Software Engineer, Consultancy'
         organization: 'Freelance'
         url: ''
-        description: 'Design, development and management of vertical software projects as requested by my clients. Projects were of an IT nature: databases, security, sharing of data. I was the only one involved in the software development and project management.\par \textbf{Keywords:} SaaS, AWS, SQL, Ruby on Rails, HTML'
+        description: 'Design, development and management of vertical software projects as requested by my clients. Projects were of an IT nature: databases, security, sharing of data. I was the only one involved in the software development and project management.\newline \textbf{Keywords:} SaaS, AWS, SQL, Ruby on Rails, HTML'
 
       - date: 'Sept 2014 -- Dec 2015'
         position: 'Intern and Project engineer'
         organization: 'Package Innovation and Design Center - ABRE'
         url: 'http://www.centroabre.com'
-        description: 'Mostly project management activities but also had some direct engineering involvement in industry projects. Very valuable experience in breaking down projects into goals/deliverables, defining schedules, making business proposals to clients, negotiating the details, following up the project progress, contacting consultants, managing budgets and results reporting.\par \textbf{Keywords:} project management, budgets, schedules, Gantt'
+        description: 'Mostly project management activities but also had some direct engineering involvement in industry projects. Very valuable experience in breaking down projects into goals/deliverables, defining schedules, making business proposals to clients, negotiating the details, following up the project progress, contacting consultants, managing budgets and results reporting.\newline \textbf{Keywords:} project management, budgets, schedules, Gantt'
 
       - date: 'April -- Aug 2014'
         position: 'Intern'
         organization: 'Laboratoire de Conception et d''Intégration des Systèmes'
         url: 'http://lcis.grenoble-inp.fr'
-        description: 'Work during a 4.5 months long stay at Valence that resulted in the development and implementation of a GPU-accelerated algorithm to solve the stereo vision matching problem (thought towards applying it on an autonomous vehicle system). Work on reading images from a couple of camera sensors using two different, interrupt-driven STM32 boards.\par \textbf{Keywords:} GPGPU, GLSL, C, C++, I2C, DCMI, DMA, SPI, OpenGL, RT Linux scheduling'
+        description: 'Work during a 4.5 months long stay at Valence that resulted in the development and implementation of a GPU-accelerated algorithm to solve the stereo vision matching problem (thought towards applying it on an autonomous vehicle system). Work on reading images from a couple of camera sensors using two different, interrupt-driven STM32 boards.\newline \textbf{Keywords:} GPGPU, GLSL, C, C++, I2C, DCMI, DMA, SPI, OpenGL, RT Linux scheduling'
 
       - date: '2014'
         position: 'Intern'
         organization: 'UDEM Autonomous supermileage vehicle'
         url: 'http://udem.edu'
-        description: 'State of the art research/exploration; electronic and software architecture design; modeling and simulation of the vehicle''s dynamics and its environment to test computer vision algorithms; PIC microcontrollers and raspberry programming and integration into a CAN network; drive-by-wire steering mechanism design; mechanical and electronic components selection and purchase.\par \textbf{Keywords:} C, C++, Java, matlab, simulink, lua, MCU, CAN, OpenCV, ROS, Gazebo, PIC'
+        description: 'State of the art research/exploration; electronic and software architecture design; modeling and simulation of the vehicle''s dynamics and its environment to test computer vision algorithms; PIC microcontrollers and raspberry programming and integration into a CAN network; drive-by-wire steering mechanism design; mechanical and electronic components selection and purchase.\newline \textbf{Keywords:} C, C++, Java, matlab, simulink, lua, MCU, CAN, OpenCV, ROS, Gazebo, PIC'
 
       - date: '2013'
         position: 'Intern'
         organization: 'Fukushima Lab, Tokyo Institute of Technology'
         url: 'http://www.3mech.titech.ac.jp/ma\_hirose/ma\_hirose\_e.html'
-        description: 'Remote work (weekly Skype meetings) consisting in the design, development and implementation of distributed software for a simulated service robot. The project applied robotics middleware and simulators to develop the software that would make a service robot react to visual commands to navigate through its environment.\par \textbf{Keywords:} OpenRTM, ROS, V-REP, Gazebo, websockets, OpenCV, C, C++, Java, lua, direct/inverse kinematics'
+        description: 'Remote work (weekly Skype meetings) consisting in the design, development and implementation of distributed software for a simulated service robot. The project applied robotics middleware and simulators to develop the software that would make a service robot react to visual commands to navigate through its environment.\newline \textbf{Keywords:} OpenRTM, ROS, V-REP, Gazebo, websockets, OpenCV, C, C++, Java, lua, direct/inverse kinematics'
 
       - date: '2013'
         position: 'Research assistant'
         organization: 'UDEM Engineering deparment'
         url: 'http://udem.edu'
-        description: 'Work to support Dr. Santiago Cruz research on a novel algorithm to approximate the solution of structure vibrations applying the Finite Element Method and the Laplace Transform. I added the functionality to plot, simulate and animate the vibrating structures; and improved the modularity of the software to automate validation of the algorithm on different datasets.\par \textbf{Keywords:} matlab, dynamics, Laplace transform, finite elements'
+        description: 'Work to support Dr. Santiago Cruz research on a novel algorithm to approximate the solution of structure vibrations applying the Finite Element Method and the Laplace Transform. I added the functionality to plot, simulate and animate the vibrating structures; and improved the modularity of the software to automate validation of the algorithm on different datasets.\newline \textbf{Keywords:} matlab, dynamics, Laplace transform, finite elements'
 
       - date: '2010 -- 2014'
         position: 'Scholarship service'
         organization: 'UDEM Academic vice-presidency'
         url: 'http://udem.edu'
-        description: 'Proposal, design and implementation of solutions for different data handling problems: WLAN collaboration platform, strategic planning tracing platform, interfaces between excel sheets and html forms, automatic generation of documents from a database, amongst other similar IT solutions.\par \textbf{Keywords:} MySQL, PHP, VBA, HTML5, javascript, AJAX, AWS, Ruby on Rails, apache'
+        description: 'Proposal, design and implementation of solutions for different data handling problems: WLAN collaboration platform, strategic planning tracing platform, interfaces between excel sheets and html forms, automatic generation of documents from a database, amongst other similar IT solutions.\newline \textbf{Keywords:} MySQL, PHP, VBA, HTML5, javascript, AJAX, AWS, Ruby on Rails, apache'
 
   education:
     section_name: 'Education and training'
@@ -89,9 +99,27 @@ en:
 
   languages:
     section_name: 'Languages'
-    english: 'English'
-    spanish: 'Spanish'
-    french: 'French'
+    entries:
+      - name: 'Spanish'
+        mother_tongue: true
+        level_description: 'Mother tongue'
+        extra: 'Mother tongue'
+      - name: 'English'
+        level_description: 'Advanced'
+        level_understanding_listening: 'C1'
+        level_understanding_reading: 'C1'
+        level_speaking_interaction: 'C1'
+        level_speaking_production: 'C1'
+        level_writing_user: 'C1'
+        extra: 'TOEFL ITP score of 620 (11/18/2010)'
+      - name: 'French'
+        level_description: 'Advanced'
+        level_understanding_listening: 'C1'
+        level_understanding_reading: 'C1'
+        level_speaking_interaction: 'C1'
+        level_speaking_production: 'C1'
+        level_writing_user: 'B2'
+        extra: 'Living in France since October 2016'
 
   skills:
     section_name: 'Personal skills'

@@ -1,0 +1,89 @@
+<%-
+  require 'i18n'
+  require "i18n/backend/fallbacks"
+  I18n::Backend::Simple.send(:include, I18n::Backend::Fallbacks)
+
+  I18n.load_path << Dir[File.expand_path("locales") + "/*.yml"]
+  I18n.default_locale = :CV_LOCALE
+  I18n.fallbacks.map(:CV_LOCALE => :common)
+-%>
+\documentclass[10pt,a4paper,sans]{moderncv}	% opciones posibles incluyen tamaño de fuente ('10pt', '11pt' and '12pt'), tamaño de papel ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' y 'landscape') y familia de fuentes ('sans' y 'roman')
+
+\moderncvstyle{classic}				% 'casual', 'classic', 'oldstyle' y 'banking'
+\moderncvcolor{grey}				% 'blue', 'orange', 'green', 'red', 'purple', 'grey' y 'black'
+%% \renewcommand{\familydefault}{\sfdefault}
+\nopagenumbers{}
+
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.75]{geometry}
+\setlength{\hintscolumnwidth}{2.7cm}
+
+\name{<%= I18n.t('contact.name.first') %>}{<%= I18n.t('contact.name.last') %>}
+\title{Curriculum Vitae}
+\address{<%= I18n.t('contact.address') %>}{}
+\phone[fixed]{<%= I18n.t('contact.phone.landline') %>}
+\phone[mobile]{<%= I18n.t('contact.phone.mobile') %>}
+\email{<%= I18n.t('contact.email') %>}
+%%\homepage{<%= I18n.t('sites.homepage') %>}
+\social[github]{<%= I18n.t('sites.github') %>}
+\photo[64pt][0pt]{picture}
+
+\begin{document}
+\maketitle
+<%= I18n.t('interests.description') %>
+
+% ----------------------------------------------------------------- %
+
+\section{<%= I18n.t('professional.section_name') %>}
+
+<%- I18n.t('professional.entries').each do |pro_entry| -%>
+
+  \cventry{<%= pro_entry[:date] %>}{<%= pro_entry[:position] %>}{<%= pro_entry[:organization] %>}{}{}
+  {<%= pro_entry[:description] %>}
+
+<%- end -%>
+
+% ----------------------------------------------------------------- %
+
+\section{<%= I18n.t('education.section_name') %>}
+
+<%- I18n.t('education.entries').each do |ed_entry| -%>
+
+  \cventry{<%= ed_entry[:date] %>}{<%= ed_entry[:program] %>}{<%= ed_entry[:institution] %>}{}{}
+  {<%= ed_entry[:extra] %>}
+
+<%- end -%>
+
+% ----------------------------------------------------------------- %
+
+\section{<%= I18n.t('languages.section_name') %>}
+
+<%- I18n.t('languages.entries').each do |entry| -%>
+
+  \cvitemwithcomment{<%= entry[:name] %>}{<%= entry[:level] %>}{<%= entry[:extra] %>}
+
+<%- end -%>
+
+% ----------------------------------------------------------------- %
+
+\section{<%= I18n.t('skills.section_name') %>}
+
+<%- I18n.t("skills.categories").each do |category| -%>
+  \subsection{<%= category[:name] %>}
+  <%- category[:entries].each do |entry| -%>
+    \cventry{}{<%= entry[:name] %>}{<%= entry[:details] %>}{}{}{}
+  <%- end -%>
+<%- end -%>
+
+% ----------------------------------------------------------------- %
+
+\section{<%= I18n.t('additional.section_name') %>}
+
+<%- I18n.t("additional.categories").each do |category| -%>
+  \subsection{<%= category[:name] %>}
+  <%- category[:entries].each do |entry| -%>
+    \cventry{}{<%= entry[:name] %>}{<%= entry[:details] %>}{}{}{}
+  <%- end -%>
+<%- end -%>
+
+\end{document}
