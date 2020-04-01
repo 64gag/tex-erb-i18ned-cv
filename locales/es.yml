@@ -32,100 +32,75 @@ es:
   interests:
     section_name: ''
     title: ''
-    description: 'Soy un Ingeniero en Mecatrónica que, además de haber cumplido y dominado el programa de estudios, también se involucró constantemente en proyectos y actividades paralelas durante mis estudios universitarios. Considero entre mis aptitudes más importantes la capacidad de autoaprendizaje, aplicación de conocimiento para solucionar problemas, organización, trabajo bajo presión y responsabilidad. Mis áreas de experiencia técnica más desarrolladas son la programación en general, los sistemas embebidos, informática y la administración de sistemas Linux. Conocí de cerca el modelo de trabajo de consultoría durante el tiempo en que me desempeñé como Ingeniero de Proyectos y siendo alguien muy interesado por emprender (y con la confianza de mis experiencias exitosas) decido comenzar Realware en mayo del 2016.'
+    description: 'Ingeniero en Mecatrónica, especializado y apasionado en Ingeniería de Software.
+    Me atraen los proyectos trascendentes, retadores y ambiciosos en los que pueda contribuir y aprender dentro de un equipo multidisciplinario, de excelencia y con liderazgo.
+    Mis principales áreas de interés profesional son los sistemas embebidos, la computación distribuida, el procesamiento digital de señales, la arquitectura de software, la automatización aplicada al software (pruebas y validación, distribución, etc.) y Linux.
+    Considero entre mis aptitudes más importantes el ser autodidacta y pragmático; así como mi capacidad de aplicar conocimiento técnico para la solución de problemas, de trabajar bajo presión y de organización.'
 
   professional:
     section_name: 'Experiencia profesional'
     entries:
-      - date: 'Oct 2016 -- Presente'
-        position: 'R\&D Software Engineer'
-        organization: ''
-        url: ''
-        description: 'Research on and development of autonomous drones oriented towards industrial applications (focus on the Logistics, Security and Assurance markets). I have worked on software at the embedded and application layers, and also on support projects such as simulation of 3D environments to make design decisions. \textbf{Keywords:} C, C++, python, NuttX, ROS, Gazebo, RTOS, drivers, OpenCV, Linux'
+      - uid: 'squadrone'
+        position: 'Ingeniero de Software'
+        organization: 'Squadrone System'
+        description: 'Desarrollo de software a distintos niveles para drones orientados a aplicaciones industriales. Los drones son sistemas complejos y retadores que exigen un alto nivel de excelencia en las prácticas de ingeniería durante todo su desarrollo. Mis contribuciones más importantes incluyen la implementación de soluciones de simulación (para el diagnóstico de problemas y la toma de decisiones), integración continua y distribución automática de software.'
 
-      - date: 'Jul -- Sept 2016'
-        position: 'Consultor'
-        organization: 'Plataforma de colaboración'
-        description: 'Única persona que trabajó en el proyecto. Sistema de información hecho a la medida del cliente (software vertical). El objetivo es centralizar y sincronizar la información que reciben todos los integrantes de un equipo de trabajo. Autorización, autenticación, archivos adjuntos (S3), etc. Construído sobre una plataforma web, aplicando tecnologías como: apache, MySQL, Ruby on Rails, javascript, CSS, AWS, TLS, etc.'
+      - uid: 'realware'
+        position: 'Freelancer/Consultor'
+        organization: 'Freelancing'
+        description: 'Desarrollo de proyectos de software incluyendo su concepción, propuesta, diseño, programación, documentación, instalación y capacitación. Sistemas de información hechos a la medida del cliente (software vertical) y expuestos mediante APIs (desarrollo de interfaces web y Android).'
 
-      - date: 'Ago - Sept 2016'
-        position: 'Consultor'
-        organization: 'Sistema de información Centro ABRE'
-        description: 'Única persona que trabajó en el proyecto. Las tareas incluyeron: concepción, propuesta, documentacion, diseño, programación, configuración del servidor, capacitación, etc. El sistema asiste al personal administrativo, técnico y gerencial del Centro, permitiéndoles dar al cliente excelentes tiempos de respuesta y optimizando cómo comparten información entre sí. Genera: bases de datos de clientes, cotizaciones, reportes de ventas, reportes para el cliente.'
+      - uid: 'abre'
+        position: 'Ing. de proyectos y practicante'
+        organization: 'Centro ABRE'
+        description: 'Centro de servicios y consultoría. Administración de proyectos: interacciones con clientes (propuestas económicas y negociación) y consultores; definición de cronogramas; delimitar proyectos en objetivos específicos y medibles; administración de presupuestos y reportar los resultados. Participaciones como consultor en algunos proyectos.'
 
-      - date: '2006--Presente'
-        position: 'Computólogo'
-        organization: 'Hobby/Autoaprendizaje'
-        description: 'Conocimientos de programación, redes, protocolos de internet, servidores, sistemas de información, criptografía, UNIX/Linux, arquitecturas de computadoras. Participación activa en comunidades de homebrew y software de código abierto. Experiencia en programación de bajo nivel de abstracción y uso Linux como mi SO. Investigo y aprendo de este tipo de tecnologías regularmente.'
-
-      - date: 'Jun -- Dic 2015'
-        position: 'Ing. de proyectos'
-        organization: '\small Centro de Innovación en Diseño de Empaque ABRE'
-        description: 'Actividades de administración de proyectos como definir cronogramas (diagramas de Gantt); delimitar proyectos en metas/entregables específicos, medibles, alcanzables, relevantes y restringidas en el tiempo; hacer propuestas económicas a los clientes del Centro y negociar los detalles; dar seguimiento al progreso del proyecto; contactar a los consultores; administrar presupuestos y reportar los resultados.'
-
-      - date: 'Abr -- Ago 2014'
+      - uid: 'lcis-internship'
         position: 'Practicante'
-        organization: '\small Laboratoire de Conception et d''Intégration des Systèmes'
-        description: 'Estancia en Francia. Sistema embebido de visión para control de un vehículo. Integración y comunicación de cámaras con un STM32 utilizando I2C, DCMI y DMA. Comunicación con un Raspberry mediante SPI. Procesamiento de imágenes acelerado utilizando el GPU del Raspberry y políticas de real-time scheduling de Linux.'
+        organization: 'LCIS - Esisar - Grenoble INP'
+        description: 'Sistema embebido de visión computarizada para control de un vehículo. Control y sincronización de dos cámaras con un STM32. Procesamiento de imágenes en el GPU de un Raspberry (visión estereoscópica).'
 
-      - date: 'Ago 2013 -- May 2014'
+      - uid: 'udem-vas-internship'
         position: 'Practicante'
         organization: 'Vehículo Autónomo Supermilla'
-        description: 'Participación en el diseño del mecanismo, selección y compra de componentes para la dirección drive-by-wire; integración y programación de microcontroladores (UART, PWM, I2C) y Raspberry en una red CAN; selección de componentes electrónicos y microcontroladores; visión computarizada (modelado y simulación del vehículo y su entorno, programación). Proyecto estudiantil, no implementado.'
+        description: 'Integración y programación de MCUs en una red CAN. Visión computarizada (detección de carriles). Modelado y simulación del vehículo y su entorno. Participación en el diseño del mecanismo (dirección drive-by-wire).'
 
-      - date: 'Sept 2014 -- May 2015'
-        position: 'Practicante'
-        organization: '\small Centro de Innovación en Diseño de Empaque ABRE'
-        description: 'Tareas técnicas como reportes de resultados de proyectos, redacción de documentos técnicos, algunas participaciones en proyectos con empresas, investigaciones/exploraciones tecnológicas, configuración de herramientas y desarrollo de software. Tareas administrativas de interacción con clientes (teléfono e email), elaboración de formatos para documentos y elaboración de presentaciones.'
-
-      - date: 'Ago 2012 -- May 2013'
+      - uid: 'fukushima-internship'
         position: 'Practicante'
         organization: 'Fukushima Lab. Tokyo Institute of Technology'
-        description: 'Trabajo a distancia (videoconferencias). Diseño, desarrollo e implementación de software disftribuido para robots de servicio. Diseño, desarrollo e implementación de software distribuido utilizando middleware (RT-Middleware y ROS, comunicados por websockets) para controlar un robot de servicio (simulado en V-REP). El robot reacciona a señalamientos detectados por una cámara.'
-
-      - date: 'Ago 2010 -- May 2014'
-        position: 'Becario'
-        organization: 'Vicerrectoría Académica UDEM'
-        description: 'Propuesta e implementación de soluciones a diferentes problemas de manejo de información. Plataforma WLAN de colaboración (HTML, AJAX), plataforma de seguimiento de planeación (PHP, MySQL), recolección y procesamiento automático de inormación de sitios web (javascript), interface entre Excel y formularios HTML (javascript), generación de documentos desde una base de datos (VBA).'
-
-      - date: '2013'
-        position: 'Colaborador'
-        organization: 'Investigación Vibraciones Mecánicas'
-        description: 'Algoritmo novedoso desarrollado en MATLAB por el Dr. Santiago Cruz para aproximar soluciones de vibraciones de estructuras utilizando el método de elementos finitos y la transformada de Laplace. Modificaciones al software para hacerlo modular, graficar y simular los resultados dibujando y animando las gráficas y sus estructuras.'
-
-      - date: 'Aug 2010 -- May 2012'
-        position: 'Concursante'
-        organization: 'Equipo de la The Freescale Cup'
-        description: 'Concurso de diseño de carros seguidores de línea a escala organizado por Freescale Semiconductor y Continental Automotive Mexico. Programación en C de la tarjeta MPC5604B de Freescale Semiconductor, integración de cámara lineal (ADC) y servomotores (PWM).'
+        description: 'Trabajo a distancia (videoconferencias). Software distribuido conectado mediante un middleware para controlar un robot de servicio: el robot reacciona a señalamientos detectados por una cámara. Validación en un entorno de simulación 3D.'
 
   education:
-    section_name: 'Education and training'
+    section_name: 'Formación académica'
     entries:
-      - date: '2010 -- 2015'
-        program: 'Mechatronics Engineer'
+      - uid: 'udem-engineering'
+        date: '2010 -- 2015'
+        program: 'Ingeniero en Mecatrónica'
         institution: 'Universidad de Monterrey (UDEM)'
-        extra: 'Graduated \emph{Cum Laude}'
-      - date: '2008 -- 2010'
-        program: 'Informatics Technician'
+      - uid: 'cbtis-technician'
+        date: '2008 -- 2010'
+        program: 'Técnico en Informática'
         institution: 'CBTis 41'
-        extra: 'First of generation'
 
   languages:
-    section_name: 'Languages'
+    section_name: 'Idiomas'
     entries:
-      - name: 'Español'
+      - uid: 'spanish'
+        name: 'Español'
         mother_tongue: true
         level_description: 'Lengua materna'
         extra: 'Lengua materna'
-      - name: 'Inglés'
+      - uid: 'english'
+        name: 'Inglés'
         level_description: 'Avanzado'
-        level_understanding_listening: 'C1'
-        level_understanding_reading: 'C1'
-        level_speaking_interaction: 'C1'
+        level_understanding_listening: 'C2'
+        level_understanding_reading: 'C2'
+        level_speaking_interaction: 'C2'
         level_speaking_production: 'C1'
-        level_writing_user: 'C1'
-        extra: 'TOEFL ITP score of 620 (11/18/2010)'
-      - name: 'Francés'
+        level_writing_user: 'C2'
+        extra: 'TOEFL ITP puntaje de 620 (18/11/2010)'
+      - uid: 'french'
+        name: 'Francés'
         level_description: 'Avanzado'
         level_understanding_listening: 'C1'
         level_understanding_reading: 'C1'
@@ -135,74 +110,71 @@ es:
         extra: 'Vivo en Francia desde Octubre 2016'
 
   skills:
-    section_name: 'Habilidades personales'
-    categories:
-        - name: 'Comunicación'
-          entries:
-            - name: 'Interacción profesional (clientes)'
-              details: 'I have learnt correct ways of communicating with clients during my internship and work period at ABRE.'
+    section_name: 'Habilidades'
+    entries:
+      - uid: ''
+        name: 'Programación'
+        details: 'C, C++, ruby, Java, shell, javascript, PHP, assembly, VBA, lua, MySQL, git, svn.'
 
-        - name: 'Job-related skills'
-          entries:
-            - name: 'Programming'
-              details: 'C, C++, ruby, javascript, PHP, assembly, shell, VBA, Java, lua, GAS.'
-            - name: 'MCUs and PLCs'
-              details: 'Microchip, STM32, Freescale, Festo.'
-            - name: 'Robotics'
-              details: 'RT-Middleware, ROS, v-rep, Gazebo.'
-            - name: 'Computer vision'
-              details: 'OpenCV, Computer Vision Toolbox.'
-            - name: 'Numeric'
-              details: 'MATLAB, GNU Octave, Scilab.'
-            - name: 'CAD'
-              details: 'ProEngineer/CREO, Autodesk Inventor, NX.'
-            - name: 'Version control'
-              details: 'git, svn.'
-            - name: 'GPU'
-              details: 'OpenGL.'
-            - name: 'Systems administration'
-              details: 'Linux (OS of choice 2006), networks, internet protocols, servers, information systems, cryptography, computer architectures. I read and learn about these technologies regularly. [c]make, gcc, g++, git, vim, javac, ssh, netcat, etc.'
+      - uid: ''
+        name: 'MCUs y PLCs'
+        details: 'Microchip, STM32, Freescale, Festo. UART, SPI, I2C, CAN, DCMI, DMA.'
 
-        - name: 'Multimedia, computer skills'
-          entries:
-            - name: 'Documents'
-              details: '\LaTeX, GoogleDocs (including GAS), Microsoft Office (including VBA).'
+      - uid: ''
+        name: 'Linux'
+        details: 'chroot, debian (sbuild, apt), ssh, scp, rsync, vim, systemd, netcat, etc.'
 
-            - name: 'Multimedia'
-              details: 'Gimp, Audacity, Blender (basic). I learnt to do many general purpose, common tasks and terminology after constantly facing the need to do some basic photo/audio/video edition for school or personal projects.'
+      - uid: ''
+        name: 'Numéricos'
+        details: 'MATLAB, GNU Octave, Scilab.'
 
-            - name: 'Web'
-              details: 'HTML, CSS, Flash, SQL, WebGL, apache, AWS. I know how to setup and publish sites and have some of them running on Amazon''s EC2, I formalized most of my knowledge by taking a MOOC on Software as a Service.'
+      - uid: ''
+        name: 'Robótica'
+        details: 'Open CV, ROS, Gazebo, V-REP, RT-Middleware.'
 
-        - name: 'Other skills'
-          entries:
-            - name: 'Autodidact'
-              details: 'Learnt to code by participating at homebrew, open source communities at the age of 13 (example).'
+      - uid: ''
+        name: 'GPGPU'
+        details: 'OpenGL, CUDA (notions).'
 
-            - name: 'Researching skills'
-              details: 'reading and applying scientifical (papers, books) and technical documentation (datasheets, reference manuals).'
+      - uid: ''
+        name: 'CAD'
+        details: 'ProEngineer/CREO, Autodesk Inventor, NX.'
 
-            - name: 'Time management skills'
-              details: 'I have dealt with many activities and responsabilities since moving to Monterrey to study college (without my parents); forcing me to get better at managing time. These time management skills have helped me greatly in every aspect of my life.'
+      - uid: ''
+        name: 'Web'
+        details: 'Ruby on Rails, HTML, CSS, WebGL, apache, AWS EC2.'
 
-  additional:
-    section_name: 'Additional information'
-    categories:
-        - name: 'Academic awards'
-          entries:
-            - name: 'Awarded by the Roberto Rocca Education Program from 2014 to 2015'
-              details: 'The program is an initiative to provide scholarships to talented undergraduate and graduate students of engineering and the applied sciences in selected countries. \href{http://www.robertorocca.org/en/}{Program homepage: http://www.robertorocca.org/en/}.'
+  awards:
+    section_name: 'Distinciones'
+    entries:
+      - uid: 'udem-engineering-cum-laude'
+        date: '2015'
+        name: 'Graduado \emph{Cum Laude} de mis estudios de ingeniería'
+        details: 'Reconocimiento otorgado a los estudiantes con el mejor desempeño.'
 
-            - name: 'Graduated \emph{Cum Laude} from the Engineering school'
-              details: ''
+      - uid: 'rocca'
+        date: '2014 -- 2015'
+        name: 'Roberto Rocca Education Program'
+        details: 'El programa es una iniciativa para otorgar becas a estudiantes talentosos de pregrado y posgrado en áreas de ingeniería y ciencias aplicadas en países selectos. \newline \href{http://www.robertorocca.org/en/}{Sitio del programa: http://www.robertorocca.org/en/}.'
 
-        - name: 'Extracurricular activities'
-          entries:
-            - name: 'Teaching experience'
-              details: 'a year of volunteering as a professor at a local Polytechnic High School teaching Physics and Computer Aided Mechanical Design. Groups of an average of 40 students each.'
+  time:
+    formats:
+      cv: "%b %Y"
 
-            - name: 'Secretary of the Society of Automotive Engineers student chapter'
-              details: 'a year of organizing events (industrial visits, courses, etc) for the UDEM engineering students community.'
-
-            - name: 'Church group'
-              details: 'three years coordinating training and recreation activities for children with an average age of 10 years old.'
+  date:
+    months: 'meses'
+    present: 'Presente'
+    abbr_month_names:
+      -
+      - Ene
+      - Feb
+      - Mar
+      - Abr
+      - May
+      - Jun
+      - Jul
+      - Ago
+      - Sep
+      - Oct
+      - Nov
+      - Dic

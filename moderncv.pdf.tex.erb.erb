@@ -1,16 +1,82 @@
 <%-
   require_relative 'cv_i18n'
   cv_i18n = CvI18n.new('CV_LOCALE')
+
+  def cventry(time:, title:, organization:, localization: '', grade: '', description:)
+    text = ""
+
+    text += "\\cventry"
+    text += "{#{time}}"
+    text += "{#{title}}"
+    text += "{#{organization}}"
+    text += "{#{localization}}"
+    text += "{#{grade}}"
+    text += "\n{#{description}}"
+  end
+
+  def cvitem(subtitle:, text:)
+    "\\cvitem{\\footnotesize #{subtitle}}{#{text}}"
+  end
+
+  def cventry_professional(professional_entry)
+    duration_months = professional_entry['duration_months']
+    time = "\\footnotesize #{professional_entry['date']}"
+    time += "\\linebreak (#{professional_entry['duration_months']} #{I18n.t('date.months')})" if duration_months
+
+    title = "\\small #{professional_entry['position']}"
+    organization = "\\small #{professional_entry['organization']}"
+    localization = ''
+    grade = ''
+
+    url = professional_entry['url']
+    url_archive = professional_entry['url_archive'] || url
+    localization = "{\\footnotesize \\ghref{#{url_archive}}{#{url}}}"
+
+    description = professional_entry['description']
+    if professional_entry['keywords'] && !professional_entry['keywords'].empty?
+      description += "\\newline \\small \\textbf{Keywords:} #{professional_entry['keywords']}."
+    end
+
+    cventry(time: time, title: title, organization: organization, localization: localization, grade: grade, description: description)
+  end
+
+  def cventry_education(education_entry)
+    time = "\\footnotesize #{education_entry['date']}"
+    title = education_entry['program']
+    organization = education_entry['institution']
+    localization = ''
+    grade = ''
+    description = education_entry['extra']
+
+    cventry(time: time, title: title, organization: organization, localization: localization, grade: grade, description: description)
+  end
+
+  def cventry_generic(entry)
+    time = ''
+    date = entry['date']
+    time = "\\footnotesize #{date}" if date
+    title = entry['name']
+    organization = ''
+    localization = ''
+    grade = ''
+    description = entry['details']
+
+    cventry(time: time, title: title, organization: organization, localization: localization, grade: grade, description: description)
+  end
 -%>
 \documentclass[10pt,a4paper,sans]{moderncv}	% opciones posibles incluyen tamaño de fuente ('10pt', '11pt' and '12pt'), tamaño de papel ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' y 'landscape') y familia de fuentes ('sans' y 'roman')
+
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.75]{geometry}
+\usepackage{fontawesome}
+
+\newcommand*\ghref[2]{ \href{#1}{#2 \faGlobe} }
 
 \moderncvstyle{classic}				% 'casual', 'classic', 'oldstyle' y 'banking'
 \moderncvcolor{grey}				% 'blue', 'orange', 'green', 'red', 'purple', 'grey' y 'black'
 %% \renewcommand{\familydefault}{\sfdefault}
 \nopagenumbers{}
 
-\usepackage[utf8]{inputenc}
-\usepackage[scale=0.75]{geometry}
 \setlength{\hintscolumnwidth}{2.7cm}
 
 \name{<%= cv_i18n.t('contact.name.first') %>}{<%= cv_i18n.t('contact.name.last') %>}
@@ -24,29 +90,25 @@
 \photo[64pt][0pt]{picture}
 
 \begin{document}
+
 \maketitle
+
 <%= cv_i18n.t('interests.description') %>
 
 % ----------------------------------------------------------------- %
 
 \section{<%= cv_i18n.t('professional.section_name') %>}
 
-<%- cv_i18n.t('professional.entries').each do |pro_entry| -%>
-
-  \cventry{\small <%= pro_entry['date'] %>}{<%= pro_entry['position'] %>}{<%= pro_entry['organization'] %>}{}{}
-  {<%= pro_entry['description'] %> \newline \textbf{Keywords:} <%= pro_entry['keywords'] %>.}
-
+<%- cv_i18n.t('professional.entries').each do |professional_entry| -%>
+  <%= cventry_professional(professional_entry) %>
 <%- end -%>
 
 % ----------------------------------------------------------------- %
 
 \section{<%= cv_i18n.t('education.section_name') %>}
 
-<%- cv_i18n.t('education.entries').each do |ed_entry| -%>
-
-  \cventry{<%= ed_entry['date'] %>}{<%= ed_entry['program'] %>}{<%= ed_entry['institution'] %>}{}{}
-  {<%= ed_entry['extra'] %>}
-
+<%- cv_i18n.t('education.entries').each do |education_entry| -%>
+  <%= cventry_education(education_entry) %>
 <%- end -%>
 
 % ----------------------------------------------------------------- %
@@ -54,31 +116,23 @@
 \section{<%= cv_i18n.t('languages.section_name') %>}
 
 <%- cv_i18n.t('languages.entries').each do |entry| -%>
-
-  \cvitemwithcomment{<%= entry['name'] %>}{<%= entry['level'] %>}{<%= entry['extra'] %>}
-
+  \cvlanguage{<%= entry['name'] %>}{<%= entry['level_description'] %>}{<%= entry['extra'] %>}
 <%- end -%>
 
 % ----------------------------------------------------------------- %
 
 \section{<%= cv_i18n.t('skills.section_name') %>}
 
-<%- cv_i18n.t("skills.categories").each do |category| -%>
-  \subsection{<%= category['name'] %>}
-  <%- category['entries'].each do |entry| -%>
-    \cventry{}{<%= entry['name'] %>}{<%= entry['details'] %>}{}{}{}
-  <%- end -%>
+<%- cv_i18n.t("skills.entries").each do |entry| -%>
+  <%= cvitem(subtitle: entry['name'], text: entry['details']) %>
 <%- end -%>
 
 % ----------------------------------------------------------------- %
 
-\section{<%= cv_i18n.t('additional.section_name') %>}
+\section{<%= cv_i18n.t('awards.section_name') %>}
 
-<%- cv_i18n.t("additional.categories").each do |category| -%>
-  \subsection{<%= category['name'] %>}
-  <%- category['entries'].each do |entry| -%>
-    \cventry{}{<%= entry['name'] %>}{<%= entry['details'] %>}{}{}{}
-  <%- end -%>
+<%- cv_i18n.t("awards.entries").each do |entry| -%>
+  <%= cventry_generic(entry) %>
 <%- end -%>
 
 \end{document}

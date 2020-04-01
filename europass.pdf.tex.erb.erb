@@ -1,31 +1,7 @@
 <%-
-  require 'i18n'
-  require "i18n/backend/fallbacks"
-  I18n::Backend::Simple.send(:include, I18n::Backend::Fallbacks)
+  require_relative 'cv_i18n'
+  cv_i18n = CvI18n.new('CV_LOCALE')
 
-  I18n.load_path << Dir[File.expand_path("locales") + "/*.yml"]
-  I18n.default_locale = :CV_LOCALE
-  I18n.fallbacks.map(:CV_LOCALE => :common)
-
-  def generate_section_content(section:)
-    text = ''
-    text += "\\ecvsection{#{I18n.t("#{section}.section_name")}}"
-
-    I18n.t("#{section}.categories").each do |category|
-      text += "\\ecvitem[10pt]{#{category[:name]}} {"
-      category[:entries].each do |entry|
-        unless entry[:details].empty?
-          text += "\\textbf{- #{entry[:name]}:} #{entry[:details]}\\par"
-        else
-          text += "\\textbf{- #{entry[:name]}.}\\par"
-        end
-      end
-
-      text += "}"
-    end
-
-    text
-  end
   def str2ecv(str)
     case str
     when "A1"
@@ -42,95 +18,143 @@
       '\ecvCTwo'
     end
   end
+
+  def section(title:, vspace: '0.1cm')
+    "\\section[#{vspace}]{#{title}}"
+  end
+
+  def ecvitem(left:, right:, vspace: '0.1cm')
+    "\\ecvitem[#{vspace}]{#{left}}{#{right}}"
+  end
+
+  def ecvitem_professional(professional_entry)
+    duration_months = professional_entry['duration_months']
+    time_content = professional_entry['date']
+    time_content += "\\linebreak (#{professional_entry['duration_months']} #{I18n.t('date.months')})" if duration_months
+
+    left = time_content
+    right = "{\\large #{professional_entry['position']}} \\par \\vspace{2pt} "
+    right += "#{professional_entry['organization']} \\par "
+
+    url = professional_entry['url']
+    url_archive = professional_entry['url_archive'] || url
+    right += "\\ghref{#{url_archive}}{#{url}} \\par \\vspace{2pt} "
+
+    right += "#{professional_entry['description']}"
+
+    if professional_entry['keywords'] && !professional_entry['keywords'].empty?
+      right += "\\par \\small \\textbf{Keywords:} #{professional_entry['keywords']}."
+    end
+
+    ecvitem(left: left, right: right, vspace: '0.25cm')
+  end
+
+  def ecvitem_education(education_entry)
+    left = education_entry['date']
+    right = "#{education_entry['program']} \\par #{education_entry['institution']} \\par #{education_entry['extra']}"
+
+    ecvitem(left: left, right: right, vspace: '0.25cm')
+  end
 -%>
-\documentclass[helvetica,<%= I18n.t('ecv.language') -%>,logo,notitle,totpages,utf8]{europecv2013}
+\documentclass[helvetica,<%= cv_i18n.t('ecv.language') -%>,logo,notitle,totpages,utf8]{europecv}
+
 \usepackage{graphicx}
 \usepackage[a4paper,top=1.2cm,left=1.2cm,right=1.2cm,bottom=2.5cm]{geometry}
-\usepackage[<%= I18n.t('ecv.language') -%>]{babel}
+\usepackage[<%= cv_i18n.t('ecv.language') -%>]{babel}
 \usepackage[T1]{fontenc}
 \usepackage{ifpdf}
 \usepackage{url}
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 \usepackage{graphicx}
+\usepackage{fontawesome}
 
-\ecvlastname{<%= I18n.t('contact.name.last') %>}
-\ecvfirstname{<%= I18n.t('contact.name.first') %>}
-\ecvaddress{<%= I18n.t('contact.address') %>}
-\ecvtelephone[<%= I18n.t('contact.phone.landline') %>]{<%= I18n.t('contact.phone.mobile') %>}
-\ecvemail{<%= I18n.t('contact.email') %>}
-\ecvnationality{<%= I18n.t('personal.nationality') %>}
-\ecvdateofbirth{<%= I18n.t('personal.date_of_birth') %>}
-\ecvgender{<%= I18n.t('personal.gender') %>}
+\newcommand*\ghref[2]{ \href{#1}{#2 \faGlobe} }
+
+\ecvname{<%= cv_i18n.t('contact.name.first') %> <%= cv_i18n.t('contact.name.last') %>}
+\ecvaddress{<%= cv_i18n.t('contact.address') %>}
+\ecvtelephone[<%= cv_i18n.t('contact.phone.landline') %>]{<%= cv_i18n.t('contact.phone.mobile') %>}
+\ecvemail{<%= cv_i18n.t('contact.email') %>}
+
+\ecvnationality{<%= cv_i18n.t('personal.nationality') %>}
+\ecvdateofbirth{<%= cv_i18n.t('personal.date_of_birth') %>}
+\ecvgender{<%= cv_i18n.t('personal.gender') %>}
+
+\ecvbeforepicture{\raggedleft}
 \ecvpicture[width=2cm]{picture.png}
+\ecvafterpicture{\ecvspace{-3.5cm}}
 
-\ecvfootnote{<%= I18n.t('ecv.footnote') %> | \href{http://europass.cedefop.europa.eu}{http://europass.cedefop.europa.eu}}
+\ecvfootnote{<%= cv_i18n.t('ecv.footnote') %> | \href{http://europass.cedefop.europa.eu}{http://europass.cedefop.europa.eu}}
 
 \begin{document}
-\selectlanguage{<%= I18n.t('ecv.language') %>}
+\selectlanguage{<%= cv_i18n.t('ecv.language') %>}
 
 \begin{europecv}
 \ecvpersonalinfo[10pt]
 
-\ecvposition{<%= I18n.t('position.section_name') %>}{<%= I18n.t('position.name') %>}
-
 % ----------------------------------------------------------------- %
 
-\ecvsection{<%= I18n.t('professional.section_name') %>}
+<%= section(title: cv_i18n.t('professional.section_name')) %>
 
-<%- I18n.t('professional.entries').each do |pro_entry| -%>
-
-  \ecvworkexperience{<%= pro_entry[:date] %>}{<%= pro_entry[:position] %>}{<%= pro_entry[:organization] %>}{\href{<%= pro_entry[:url] %>}{<%= pro_entry[:url] %>}}
-  {<%= pro_entry[:description] %>}
-
+<%- cv_i18n.t('professional.entries').each do |professional_entry| -%>
+  <%= ecvitem_professional(professional_entry) %>
 <%- end -%>
 
 % ----------------------------------------------------------------- %
 
-\ecvsection{<%= I18n.t('education.section_name') %>}
+<%= section(title: cv_i18n.t('education.section_name')) %>
 
-<%- I18n.t('education.entries').each do |ed_entry| -%>
-
-  \ecveducation{<%= ed_entry[:date] %>}{<%= ed_entry[:program] %>}{<%= ed_entry[:institution] %>}
-  {}{<%= ed_entry[:extra] %>}
-
+<%- cv_i18n.t('education.entries').each do |education_entry| -%>
+  <%= ecvitem_education(education_entry) %>
 <%- end -%>
 
 % ----------------------------------------------------------------- %
 
-
-\ecvsection{<%= I18n.t('languages.section_name') %>}
-
-<%-
-  languages_entries = I18n.t('languages.entries').dup
-  mother_tongues = languages_entries.keep_if {|e| e[:mother_tongue]}
-  mother_tongues_str = mother_tongues.map {|m| m[:name]}.join(", ")
--%>
-  \ecvmothertongue[20pt]{<%= mother_tongues_str %> }
+<%= section(title: cv_i18n.t('languages.section_name')) %>
 
 <%-
-  languages_entries = I18n.t('languages.entries').dup
-  non_mother_tongues = languages_entries.keep_if {|e| not e[:mother_tongue]}
+  languages_entries = cv_i18n.t('languages.entries').dup
+  mother_tongues = languages_entries.keep_if {|e| e['mother_tongue']}
+  mother_tongues_str = mother_tongues.map {|m| m['name']}.join(", ")
+-%>
+  \ecvmothertongue[0.5cm]{<%= mother_tongues_str %> }
+
+<%-
+  languages_entries = cv_i18n.t('languages.entries').dup
+  non_mother_tongues = languages_entries.keep_if {|e| not e['mother_tongue']}
 -%>
 
-\ecvlanguageheader
+\ecvlanguageheader{(*)}
 <%- non_mother_tongues.each do |entry| -%>
 
-  \ecvlanguage{<%= entry[:name] %>}
-  {<%= str2ecv(entry[:level_understanding_listening]) %>}
-  {<%= str2ecv(entry[:level_understanding_reading]) %>}
-  {<%= str2ecv(entry[:level_speaking_interaction]) %>}
-  {<%= str2ecv(entry[:level_speaking_production]) %>}
-  {<%= str2ecv(entry[:level_writing_user]) %>}
+  \ecvlanguage{<%= entry['name'] %>}
+  {<%= str2ecv(entry['level_understanding_listening']) %>}
+  {<%= str2ecv(entry['level_understanding_reading']) %>}
+  {<%= str2ecv(entry['level_speaking_interaction']) %>}
+  {<%= str2ecv(entry['level_speaking_production']) %>}
+  {<%= str2ecv(entry['level_writing_user']) %>}
 
 <%- end -%>
-
-\ecvlanguagefooter[10pt]
+\ecvlanguagefooter{(*)}
 
 % ----------------------------------------------------------------- %
 
-<%= generate_section_content(section: 'skills') -%>
+<%= section(title: cv_i18n.t('skills.section_name')) %>
 
-<%= generate_section_content(section: 'additional') -%>
+<%- cv_i18n.t("skills.entries").each do |entry| -%>
+  <%- left = entry['name'] %>
+  <%- right = entry['details'] %>
+  <%= ecvitem(left: left, right: right) %>
+<%- end -%>
+
+% ----------------------------------------------------------------- %
+
+<%= section(title: cv_i18n.t('awards.section_name')) %>
+
+<%- cv_i18n.t("awards.entries").each do |entry| -%>
+  <%- left = '' %>
+  <%- right = "\\textbf{#{entry['name']}} \\par #{entry['details']}" %>
+  <%= ecvitem(left: left, right: right) %>
+<%- end -%>
 
 \end{europecv}
 \end{document}
