@@ -20,176 +20,156 @@ en:
     linkedin: ''
 
   personal:
-    date_of_birth: 'May 10th, 1992'
+    date_of_birth: '10/05/1992'
     gender: 'Male'
     nationality: 'Mexican'
 
-  position:
-    section_name: 'Job applied for'
-    name: 'Embedded developer'
-    motivation: ''
-
   interests:
-    section_name: ''
-    title: ''
-    description: 'Soy un Ingeniero en Mecatrónica que, además de haber cumplido y dominado el programa de estudios, también se involucró constantemente en proyectos y actividades paralelas durante mis estudios universitarios. Considero entre mis aptitudes más importantes la capacidad de autoaprendizaje, aplicación de conocimiento para solucionar problemas, organización, trabajo bajo presión y responsabilidad. Mis áreas de experiencia técnica más desarrolladas son la programación en general, los sistemas embebidos, informática y la administración de sistemas Linux. Conocí de cerca el modelo de trabajo de consultoría durante el tiempo en que me desempeñé como Ingeniero de Proyectos y siendo alguien muy interesado por emprender (y con la confianza de mis experiencias exitosas) decido comenzar Realware en mayo del 2016.'
+    section_name: 'Interests'
+    title: 'Embedded Software and Linux'
+    description: 'Mechatronics Engineer, specialized and passionate about Software Engineering.
+    I am interested on projects that are impactful, challenging and ambitious on which I can contribute and learn within a team of diversity and excellence.
+    My main professional interests fields are the embedded systems, Linux, digital signal processing, distributed computing, software architecture and automation applied to software (tests and validation, distribution, ...).
+    I consider amongst my most valuable aptitudes being autodidact, pragmatic and methodic; as well as my capacity to apply technical knowledge to solve problems and to work under pressure.'
 
   professional:
     section_name: 'Work experience'
     entries:
-      - date: 'Oct 2016 -- Present'
+      - uid: 'squadrone'
         position: 'R\&D Software Engineer'
         organization: 'Squadrone System'
-        url: 'http://www.squadrone-system.com'
-        description: 'Research on and development of autonomous drones oriented towards industrial applications (focus on the Logistics, Security and Assurance markets). I have worked on software at the embedded and application layers, and also on support projects such as simulation of 3D environments to make design decisions. \textbf{Keywords:} C, C++, python, NuttX, ROS, Gazebo, RTOS, drivers, OpenCV, Linux'
+        description: 'Software development (multiple levels) for drones aimed towards industrial applications. Drones are complex and challenging systems that demand a high level of excellence to the engineering practices applied during their whole development cycle. I played an important role in the improvement of the internal infrastructure of the company through the design and/or implementation of solutions involving simulation, continuous integration and continuous delivery.'
 
-      - date: 'Jan 2016 -- Oct 2016'
-        position: 'Software Engineer, Consultancy'
-        organization: 'Freelance'
-        url: ''
-        description: 'Design, development and management of vertical software projects as requested by my clients. Projects were of an IT nature: databases, security, sharing of data. I was the only one involved in the software development and project management.\newline \textbf{Keywords:} SaaS, AWS, SQL, Ruby on Rails, HTML'
+      - uid: 'realware'
+        position: 'Freelancer/Consultant'
+        organization: 'Realware'
+        description: 'Software projects including their conception, proposal, design, programming, documentation, installation and training. Information systems made to fit specific client needs (vertical software) and exposed through APIs (development of web and Android interfaces).'
 
-      - date: 'Sept 2014 -- Dec 2015'
-        position: 'Intern and Project engineer'
-        organization: 'Package Innovation and Design Center - ABRE'
-        url: 'http://www.centroabre.com'
-        description: 'Mostly project management activities but also had some direct engineering involvement in industry projects. Very valuable experience in breaking down projects into goals/deliverables, defining schedules, making business proposals to clients, negotiating the details, following up the project progress, contacting consultants, managing budgets and results reporting.\newline \textbf{Keywords:} project management, budgets, schedules, Gantt'
+      - uid: 'abre'
+        position: 'Project Engineer and Intern'
+        organization: 'ABRE Center'
+        description: 'Professional services and consulting center. Project management: interactions with clients (economic proposals and negotiation) and consultants; defining schedules; delimit project in specific and measurable goals; budgets management and results reporting. Participations as consultant in some projects.'
 
-      - date: 'April -- Aug 2014'
+      - uid: 'lcis-internship'
         position: 'Intern'
-        organization: 'Laboratoire de Conception et d''Intégration des Systèmes'
-        url: 'http://lcis.grenoble-inp.fr'
-        description: 'Work during a 4.5 months long stay at Valence that resulted in the development and implementation of a GPU-accelerated algorithm to solve the stereo vision matching problem (thought towards applying it on an autonomous vehicle system). Work on reading images from a couple of camera sensors using two different, interrupt-driven STM32 boards.\newline \textbf{Keywords:} GPGPU, GLSL, C, C++, I2C, DCMI, DMA, SPI, OpenGL, RT Linux scheduling'
+        organization: 'LCIS - Esisar - Grenoble INP'
+        description: 'Computer vision embedded system to control a vehicle. Control and synchronization of two cameras using an STM32. Image processing on the GPU of a Raspberry (stereoscopic vision).'
 
-      - date: '2014'
+      - uid: 'udem-vas-internship'
         position: 'Intern'
-        organization: 'UDEM Autonomous supermileage vehicle'
-        url: 'http://udem.edu'
-        description: 'State of the art research/exploration; electronic and software architecture design; modeling and simulation of the vehicle''s dynamics and its environment to test computer vision algorithms; PIC microcontrollers and raspberry programming and integration into a CAN network; drive-by-wire steering mechanism design; mechanical and electronic components selection and purchase.\newline \textbf{Keywords:} C, C++, Java, matlab, simulink, lua, MCU, CAN, OpenCV, ROS, Gazebo, PIC'
+        organization: 'Autonomous Supermileage Vehicle UDEM'
+        description: 'Programming and integration of MCUs in a CAN network. Computer vision (lane detection). Modeling and simulation of the vehicle and its environment. Participated in the design of the mechanism (drive-by-wire steering).'
 
-      - date: '2013'
+      - uid: 'fukushima-internship'
         position: 'Intern'
-        organization: 'Fukushima Lab, Tokyo Institute of Technology'
-        url: 'http://www.3mech.titech.ac.jp/ma\_hirose/ma\_hirose\_e.html'
-        description: 'Remote work (weekly Skype meetings) consisting in the design, development and implementation of distributed software for a simulated service robot. The project applied robotics middleware and simulators to develop the software that would make a service robot react to visual commands to navigate through its environment.\newline \textbf{Keywords:} OpenRTM, ROS, V-REP, Gazebo, websockets, OpenCV, C, C++, Java, lua, direct/inverse kinematics'
-
-      - date: '2013'
-        position: 'Research assistant'
-        organization: 'UDEM Engineering deparment'
-        url: 'http://udem.edu'
-        description: 'Work to support Dr. Santiago Cruz research on a novel algorithm to approximate the solution of structure vibrations applying the Finite Element Method and the Laplace Transform. I added the functionality to plot, simulate and animate the vibrating structures; and improved the modularity of the software to automate validation of the algorithm on different datasets.\newline \textbf{Keywords:} matlab, dynamics, Laplace transform, finite elements'
-
-      - date: '2010 -- 2014'
-        position: 'Scholarship service'
-        organization: 'UDEM Academic vice-presidency'
-        url: 'http://udem.edu'
-        description: 'Proposal, design and implementation of solutions for different data handling problems: WLAN collaboration platform, strategic planning tracing platform, interfaces between excel sheets and html forms, automatic generation of documents from a database, amongst other similar IT solutions.\newline \textbf{Keywords:} MySQL, PHP, VBA, HTML5, javascript, AJAX, AWS, Ruby on Rails, apache'
+        organization: 'Fukushima Lab. Tokyo Institute of Technology'
+        description: 'Remote work (video conferencing). Distributed software through a middleware to control a service robot: the robot reacts to signals detected with a camera. Validation in a 3D simulated environment.'
 
   education:
-    section_name: 'Education and training'
+    section_name: 'Education'
     entries:
-      - date: '2010 -- 2015'
+      - uid: 'udem-engineering'
+        date: '2010 -- 2015'
         program: 'Mechatronics Engineer'
         institution: 'Universidad de Monterrey (UDEM)'
-        extra: 'Graduated \emph{Cum Laude}'
-      - date: '2008 -- 2010'
-        program: 'Informatics Technician'
+      - uid: 'cbtis-technician'
+        date: '2008 -- 2010'
+        program: 'Information Systems Technician'
         institution: 'CBTis 41'
-        extra: ''
 
   languages:
     section_name: 'Languages'
     entries:
-      - name: 'Spanish'
+      - uid: 'spanish'
+        name: 'Spanish'
         mother_tongue: true
         level_description: 'Mother tongue'
         extra: 'Mother tongue'
-      - name: 'English'
+      - uid: 'english'
+        name: 'English'
         level_description: 'Advanced'
-        level_understanding_listening: 'C1'
-        level_understanding_reading: 'C1'
-        level_speaking_interaction: 'C1'
+        level_understanding_listening: 'C2'
+        level_understanding_reading: 'C2'
+        level_speaking_interaction: 'C2'
         level_speaking_production: 'C1'
-        level_writing_user: 'C1'
-        extra: 'TOEFL ITP score of 620 (11/18/2010)'
-      - name: 'French'
+        level_writing_user: 'C2'
+        extra: 'TOEFL ITP score of 620 (18/11/2010)'
+      - uid: 'french'
+        name: 'French'
         level_description: 'Advanced'
         level_understanding_listening: 'C1'
         level_understanding_reading: 'C1'
         level_speaking_interaction: 'C1'
         level_speaking_production: 'C1'
         level_writing_user: 'B2'
-        extra: 'Living in France since October 2016'
+        extra: 'I live in France since October 2016'
 
   skills:
-    section_name: 'Personal skills'
-    categories:
-        - name: 'Communication skills'
-          entries:
-            - name: 'Professional interaction (clients)'
-              details: 'I have learnt correct ways of communicating with clients during my internship and work period at ABRE.'
+    section_name: 'Skills'
+    entries:
+      - uid: ''
+        name: 'Programming'
+        details: 'C, C++, ruby, Java, shell, javascript, PHP, assembly, VBA, lua, MySQL, git, svn.'
 
-        - name: 'Job-related skills'
-          entries:
-            - name: 'Programming'
-              details: 'C, C++, javascript, PHP, assembly, shell, VBA, Java, ruby, lua, GAS.'
-            - name: 'MCUs and PLCs'
-              details: 'Microchip, STM32, Freescale, Festo.'
-            - name: 'Robotics'
-              details: 'RT-Middleware, ROS, v-rep, gazebo.'
-            - name: 'Computer vision'
-              details: 'OpenCV, Computer Vision Toolbox.'
-            - name: 'Numeric'
-              details: 'MATLAB, GNU Octave, Scilab.'
-            - name: 'CAD'
-              details: 'ProEngineer/CREO, Autodesk Inventor, NX.'
-            - name: 'Version control'
-              details: 'git, svn.'
-            - name: 'GPU'
-              details: 'OpenGL.'
-            - name: 'Systems administration'
-              details: 'Linux (OS of choice 2006), networks, internet protocols, servers, information systems, cryptography, computer architectures. I read and learn about these technologies regularly. [c]make, gcc, g++, git, vim, javac, ssh, netcat, etc.'
+      - uid: ''
+        name: 'MCUs and PLCs'
+        details: 'Microchip, STM32, Freescale, Festo. UART, SPI, I2C, CAN, DCMI, DMA.'
 
-        - name: 'Multimedia, computer skills'
-          entries:
-            - name: 'Documents'
-              details: '\LaTeX, GoogleDocs (including GAS), Microsoft Office (including VBA).'
+      - uid: ''
+        name: 'Linux'
+        details: 'chroot, debian (sbuild, apt), ssh, scp, rsync, vim, systemd, netcat, etc.'
 
-            - name: 'Multimedia'
-              details: 'Gimp, Audacity, Blender (basic). I learnt to do many general purpose, common tasks and terminology after constantly facing the need to do some basic photo/audio/video edition for school or personal projects.'
+      - uid: ''
+        name: 'Numerical'
+        details: 'MATLAB, GNU Octave, Scilab.'
 
-            - name: 'Web'
-              details: 'HTML, CSS, Flash, SQL, WebGL, apache, AWS. I know how to setup and publish sites and have some of them running on Amazon''s EC2, I formalized most of my knowledge by taking a MOOC on Software as a Service.'
+      - uid: ''
+        name: 'Robotics'
+        details: 'Open CV, ROS, Gazebo, V-REP, RT-Middleware.'
 
-        - name: 'Other skills'
-          entries:
-            - name: 'Autodidact'
-              details: 'Learnt to code by participating at homebrew, open source communities at the age of 13 (example).'
+      - uid: ''
+        name: 'GPGPU'
+        details: 'OpenGL, CUDA (notions).'
 
-            - name: 'Researching skills'
-              details: 'reading and applying scientifical (papers, books) and technical documentation (datasheets, reference manuals).'
+      - uid: ''
+        name: 'CAD'
+        details: 'ProEngineer/CREO, Autodesk Inventor, NX.'
 
-            - name: 'Time management skills'
-              details: 'I have dealt with many activities and responsabilities since moving to Monterrey to study college (without my parents); forcing me to get better at managing time. These time management skills have helped me greatly in every aspect of my life.'
+      - uid: ''
+        name: 'Web'
+        details: 'Ruby on Rails, HTML, CSS, WebGL, apache, AWS EC2.'
 
-  additional:
-    section_name: 'Additional information'
-    categories:
-        - name: 'Academic awards'
-          entries:
-            - name: 'Awarded by the Roberto Rocca Education Program from 2014 to 2015'
-              details: 'The program is an initiative to provide scholarships to talented undergraduate and graduate students of engineering and the applied sciences in selected countries. \href{http://www.robertorocca.org/en/}{Program homepage: http://www.robertorocca.org/en/}.'
+  awards:
+    section_name: 'Awards'
+    entries:
+      - uid: 'udem-engineering-cum-laude'
+        date: '2015'
+        name: 'Graduated \emph{Cum Laude} from Engineering school'
+        details: 'Award given to the highest-performing students.'
 
-            - name: 'Graduated \emph{Cum Laude} from the Engineering school'
-              details: ''
+      - uid: 'rocca'
+        date: '2014 -- 2015'
+        name: 'Roberto Rocca Education Program'
+        details: '\ghref{http://www.robertorocca.org/en/}{http://www.robertorocca.org/en/} \newline The program is an initiative to provide scholarships to talented undergraduate and graduate students of engineering and the applied sciences in selected countries.'
 
-        - name: 'Extracurricular activities'
-          entries:
-            - name: 'Teaching experience'
-              details: 'a year of volunteering as a professor at a local Polytechnic High School teaching Physics and Computer Aided Mechanical Design. Groups of an average of 40 students each.'
+  time:
+    formats:
+      cv: "%b %Y"
 
-            - name: 'Secretary of the Society of Automotive Engineers student chapter'
-              details: 'a year of organizing events (industrial visits, courses, etc) for the UDEM engineering students community.'
-
-            - name: 'Church group'
-              details: 'three years coordinating training and recreation activities for children with an average age of 10 years old.'
+  date:
+    months: 'months'
+    present: 'Present'
+    abbr_month_names:
+      -
+      - Jan.
+      - Feb.
+      - Mars
+      - Apr.
+      - May
+      - June
+      - July
+      - Aug.
+      - Sep.
+      - Oct.
+      - Nov.
+      - Dec.

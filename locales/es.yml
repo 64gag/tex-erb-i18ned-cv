@@ -24,36 +24,31 @@ es:
     gender: 'Masculino'
     nationality: 'Mexicano'
 
-  position:
-    section_name: 'Job applied for'
-    name: 'Embedded developer'
-    motivation: ''
-
   interests:
-    section_name: ''
-    title: ''
+    section_name: 'Intereses'
+    title: 'Software embebido y Linux'
     description: 'Ingeniero en Mecatrónica, especializado y apasionado en Ingeniería de Software.
-    Me atraen los proyectos trascendentes, retadores y ambiciosos en los que pueda contribuir y aprender dentro de un equipo multidisciplinario, de excelencia y con liderazgo.
-    Mis principales áreas de interés profesional son los sistemas embebidos, la computación distribuida, el procesamiento digital de señales, la arquitectura de software, la automatización aplicada al software (pruebas y validación, distribución, etc.) y Linux.
-    Considero entre mis aptitudes más importantes el ser autodidacta y pragmático; así como mi capacidad de aplicar conocimiento técnico para la solución de problemas, de trabajar bajo presión y de organización.'
+    Me atraen los proyectos de alto impacto, retadores y ambiciosos en los que pueda contribuir y aprender dentro de un equipo diverso y de excelencia.
+    Mis principales áreas de interés profesional son los sistemas embebidos, Linux, el procesamiento digital de señales, la computación distribuida, la arquitectura de software y la automatización aplicada al software (pruebas y validación, distribución, ...).
+    Considero entre mis aptitudes más importantes el ser autodidacta, pragmático y metódico; así como mis capacidades de aplicar conocimiento técnico para la solución de problemas y de trabajar bajo presión.'
 
   professional:
     section_name: 'Experiencia profesional'
     entries:
       - uid: 'squadrone'
-        position: 'Ingeniero de Software'
+        position: 'Ingeniero de Software R\&D'
         organization: 'Squadrone System'
-        description: 'Desarrollo de software a distintos niveles para drones orientados a aplicaciones industriales. Los drones son sistemas complejos y retadores que exigen un alto nivel de excelencia en las prácticas de ingeniería durante todo su desarrollo. Mis contribuciones más importantes incluyen la implementación de soluciones de simulación (para el diagnóstico de problemas y la toma de decisiones), integración continua y distribución automática de software.'
+        description: 'Desarrollo de software (múltiples niveles) para drones orientados a aplicaciones industriales. Los drones son sistemas complejos y retadores que exigen un alto nivel de excelencia en las prácticas de ingeniería aplicadas durante todo su ciclo de desarrollo. Parte importante en la mejora de la infraestructura interna de la empresa mediante el diseño y/o implementación de soluciones de simulación, integración continua y distribución automática de software.'
 
       - uid: 'realware'
-        position: 'Freelancer/Consultor'
-        organization: 'Freelancing'
-        description: 'Desarrollo de proyectos de software incluyendo su concepción, propuesta, diseño, programación, documentación, instalación y capacitación. Sistemas de información hechos a la medida del cliente (software vertical) y expuestos mediante APIs (desarrollo de interfaces web y Android).'
+        position: 'Independiente/Consultor'
+        organization: 'Realware'
+        description: 'Proyectos de software incluyendo su concepción, propuesta, diseño, programación, documentación, instalación y capacitación. Sistemas de información adaptados a necesidades específicas de clientes (software vertical) y expuestos mediante APIs (desarrollo de interfaces web y Android).'
 
       - uid: 'abre'
-        position: 'Ing. de proyectos y practicante'
+        position: 'Ingeniero de Proyectos y Practicante'
         organization: 'Centro ABRE'
-        description: 'Centro de servicios y consultoría. Administración de proyectos: interacciones con clientes (propuestas económicas y negociación) y consultores; definición de cronogramas; delimitar proyectos en objetivos específicos y medibles; administración de presupuestos y reportar los resultados. Participaciones como consultor en algunos proyectos.'
+        description: 'Centro de servicios profesionales y consultoría. Administración de proyectos: interacciones con clientes (propuestas económicas y negociación) y consultores; definición de cronogramas; delimitar proyectos en objetivos específicos y medibles; administración de presupuestos y reportar los resultados. Participaciones como consultor en algunos proyectos.'
 
       - uid: 'lcis-internship'
         position: 'Practicante'
@@ -62,8 +57,8 @@ es:
 
       - uid: 'udem-vas-internship'
         position: 'Practicante'
-        organization: 'Vehículo Autónomo Supermilla'
-        description: 'Integración y programación de MCUs en una red CAN. Visión computarizada (detección de carriles). Modelado y simulación del vehículo y su entorno. Participación en el diseño del mecanismo (dirección drive-by-wire).'
+        organization: 'Vehículo Autónomo Supermilla UDEM'
+        description: 'Programación e integración de MCUs en una red CAN. Visión computarizada (detección de carriles). Modelado y simulación del vehículo y su entorno. Participación en el diseño del mecanismo (dirección drive-by-wire).'
 
       - uid: 'fukushima-internship'
         position: 'Practicante'
@@ -155,7 +150,7 @@ es:
       - uid: 'rocca'
         date: '2014 -- 2015'
         name: 'Roberto Rocca Education Program'
-        details: 'El programa es una iniciativa para otorgar becas a estudiantes talentosos de pregrado y posgrado en áreas de ingeniería y ciencias aplicadas en países selectos. \newline \href{http://www.robertorocca.org/en/}{Sitio del programa: http://www.robertorocca.org/en/}.'
+        details: '\ghref{http://www.robertorocca.org/es/}{http://www.robertorocca.org/es/} \newline El programa es una iniciativa para otorgar becas a estudiantes talentosos de pregrado y posgrado en áreas de ingeniería y ciencias aplicadas en países selectos.'
 
   time:
     formats:
@@ -166,15 +161,15 @@ es:
     present: 'Presente'
     abbr_month_names:
       -
-      - Ene
-      - Feb
-      - Mar
-      - Abr
-      - May
-      - Jun
-      - Jul
-      - Ago
-      - Sep
-      - Oct
-      - Nov
-      - Dic
+      - Ene.
+      - Feb.
+      - Mar.
+      - Abr.
+      - Mayo
+      - Jun.
+      - Jul.
+      - Ago.
+      - Sep.
+      - Oct.
+      - Nov.
+      - Dic.
