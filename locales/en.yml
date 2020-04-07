@@ -1,0 +1,175 @@
+---
+en:
+  ecv:
+    language: 'english'
+    footnote: '© European Union, 2002-2013'
+
+  contact:
+    name:
+      first: 'P.'
+      last: 'Aguiar'
+    address: '1 rue Mayen, 38000 Grenoble, France'
+    email: 'paguiar32@gmail.com'
+    phone:
+      landline: '-'
+      mobile: '-'
+
+  sites:
+    homepage: 'paguiar.net'
+    github: 'paguiar'
+    linkedin: ''
+
+  personal:
+    date_of_birth: '10/05/1992'
+    gender: 'Male'
+    nationality: 'Mexican'
+
+  interests:
+    section_name: 'Interests'
+    title: 'Embedded Software and Linux'
+    description: 'Mechatronics Engineer, specialized and passionate about Software Engineering.
+    I am interested on projects that are impactful, challenging and ambitious on which I can contribute and learn within a team of diversity and excellence.
+    My main professional interests fields are the embedded systems, Linux, digital signal processing, distributed computing, software architecture and automation applied to software (tests and validation, distribution, ...).
+    I consider amongst my most valuable aptitudes being autodidact, pragmatic and methodic; as well as my capacity to apply technical knowledge to solve problems and to work under pressure.'
+
+  professional:
+    section_name: 'Work experience'
+    entries:
+      - uid: 'squadrone'
+        position: 'R\&D Software Engineer'
+        organization: 'Squadrone System'
+        description: 'Software development (multiple levels) for drones aimed towards industrial applications. Drones are complex and challenging systems that demand a high level of excellence to the engineering practices applied during their whole development cycle. I played an important role in the improvement of the internal infrastructure of the company through the design and/or implementation of solutions involving simulation, continuous integration and continuous delivery.'
+
+      - uid: 'realware'
+        position: 'Freelancer/Consultant'
+        organization: 'Realware'
+        description: 'Software projects including their conception, proposal, design, programming, documentation, installation and training. Information systems made to fit specific client needs (vertical software) and exposed through APIs (development of web and Android interfaces).'
+
+      - uid: 'abre'
+        position: 'Project Engineer and Intern'
+        organization: 'ABRE Center'
+        description: 'Professional services and consulting center. Project management: interactions with clients (economic proposals and negotiation) and consultants; defining schedules; delimit project in specific and measurable goals; budgets management and results reporting. Participations as consultant in some projects.'
+
+      - uid: 'lcis-internship'
+        position: 'Intern'
+        organization: 'LCIS - Esisar - Grenoble INP'
+        description: 'Computer vision embedded system to control a vehicle. Control and synchronization of two cameras using an STM32. Image processing on the GPU of a Raspberry (stereoscopic vision).'
+
+      - uid: 'udem-vas-internship'
+        position: 'Intern'
+        organization: 'Autonomous Supermileage Vehicle UDEM'
+        description: 'Programming and integration of MCUs in a CAN network. Computer vision (lane detection). Modeling and simulation of the vehicle and its environment. Participated in the design of the mechanism (drive-by-wire steering).'
+
+      - uid: 'fukushima-internship'
+        position: 'Intern'
+        organization: 'Fukushima Lab. Tokyo Institute of Technology'
+        description: 'Remote work (video conferencing). Distributed software through a middleware to control a service robot: the robot reacts to signals detected with a camera. Validation in a 3D simulated environment.'
+
+  education:
+    section_name: 'Education'
+    entries:
+      - uid: 'udem-engineering'
+        date: '2010 -- 2015'
+        program: 'Mechatronics Engineer'
+        institution: 'Universidad de Monterrey (UDEM)'
+      - uid: 'cbtis-technician'
+        date: '2008 -- 2010'
+        program: 'Information Systems Technician'
+        institution: 'CBTis 41'
+
+  languages:
+    section_name: 'Languages'
+    entries:
+      - uid: 'spanish'
+        name: 'Spanish'
+        mother_tongue: true
+        level_description: 'Mother tongue'
+        extra: 'Mother tongue'
+      - uid: 'english'
+        name: 'English'
+        level_description: 'Advanced'
+        level_understanding_listening: 'C2'
+        level_understanding_reading: 'C2'
+        level_speaking_interaction: 'C2'
+        level_speaking_production: 'C1'
+        level_writing_user: 'C2'
+        extra: 'TOEFL ITP score of 620 (18/11/2010)'
+      - uid: 'french'
+        name: 'French'
+        level_description: 'Advanced'
+        level_understanding_listening: 'C1'
+        level_understanding_reading: 'C1'
+        level_speaking_interaction: 'C1'
+        level_speaking_production: 'C1'
+        level_writing_user: 'B2'
+        extra: 'I live in France since October 2016'
+
+  skills:
+    section_name: 'Skills'
+    entries:
+      - uid: ''
+        name: 'Programming'
+        details: 'C, C++, ruby, Java, shell, javascript, PHP, assembly, VBA, lua, MySQL, git, svn.'
+
+      - uid: ''
+        name: 'MCUs and PLCs'
+        details: 'Microchip, STM32, Freescale, Festo. UART, SPI, I2C, CAN, DCMI, DMA.'
+
+      - uid: ''
+        name: 'Linux'
+        details: 'chroot, debian (sbuild, apt), ssh, scp, rsync, vim, systemd, netcat, etc.'
+
+      - uid: ''
+        name: 'Numerical'
+        details: 'MATLAB, GNU Octave, Scilab.'
+
+      - uid: ''
+        name: 'Robotics'
+        details: 'Open CV, ROS, Gazebo, V-REP, RT-Middleware.'
+
+      - uid: ''
+        name: 'GPGPU'
+        details: 'OpenGL, CUDA (notions).'
+
+      - uid: ''
+        name: 'CAD'
+        details: 'ProEngineer/CREO, Autodesk Inventor, NX.'
+
+      - uid: ''
+        name: 'Web'
+        details: 'Ruby on Rails, HTML, CSS, WebGL, apache, AWS EC2.'
+
+  awards:
+    section_name: 'Awards'
+    entries:
+      - uid: 'udem-engineering-cum-laude'
+        date: '2015'
+        name: 'Graduated \emph{Cum Laude} from Engineering school'
+        details: 'Award given to the highest-performing students.'
+
+      - uid: 'rocca'
+        date: '2014 -- 2015'
+        name: 'Roberto Rocca Education Program'
+        details: '\ghref{http://www.robertorocca.org/en/}{http://www.robertorocca.org/en/} \newline The program is an initiative to provide scholarships to talented undergraduate and graduate students of engineering and the applied sciences in selected countries.'
+
+  time:
+    formats:
+      cv: "%b %Y"
+
+  date:
+    months: 'months'
+    present: 'Present'
+    abbr_month_names:
+      -
+      - Jan.
+      - Feb.
+      - Mars
+      - Apr.
+      - May
+      - June
+      - July
+      - Aug.
+      - Sep.
+      - Oct.
+      - Nov.
+      - Dec.

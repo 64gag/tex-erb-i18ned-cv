@@ -1,0 +1,175 @@
+---
+fr:
+  ecv:
+    language: 'french'
+    footnote: '© Union Européenne, 2002-2013'
+
+  contact:
+    name:
+      first: 'Pedro'
+      last: 'AGUIAR'
+    address: '1 rue Mayen, 38000 Grenoble, France'
+    email: 'paguiar32@gmail.com'
+    phone:
+      landline: '-'
+      mobile: '-'
+
+  sites:
+    homepage: 'paguiar.net'
+    github: 'paguiar'
+    linkedin: ''
+
+  personal:
+    date_of_birth: '10/05/1992'
+    gender: 'Masculin'
+    nationality: 'Mexicain'
+
+  interests:
+    section_name: 'Intérêts'
+    title: 'Software embarqué et Linux'
+    description: 'Ingénieur en Mécatronique, spécialisé et passionné de l''informatique.
+     Je suis attiré par des projets à fort impact, stimulants et ambitieux où je peux contribuer et apprendre au sein d''une équipe diversifiée et avec une forte valeur de l''excellente.
+     Mes principaux domaines d''intérêt professionnel sont les systèmes embarqués, Linux, le traitement numérique du signal, l''informatique distribuée, l''architecture logicielle et l''automatisation appliquée aux logiciels (test et validation, distribution, ...).
+     Je considère parmi mes aptitudes les plus importantes celle d''être autodidacte, pragmatique et méthodique; ainsi que mes capacités à appliquer des connaissances techniques pour résoudre des problèmes et travailler sous pression.'
+
+  professional:
+    section_name: 'Expérience professionnelle'
+    entries:
+      - uid: 'squadrone'
+        position: 'Ingénieur Logiciel R\&D'
+        organization: 'Squadrone System'
+        description: 'Développement logiciel (plusieurs niveaux) pour drones orientés vers les applications industrielles. Les drones sont des systèmes complexes qui exigent un haut niveau d''excellence dans les pratiques d''ingénierie appliquée tout au long de leur cycle de développement. J''ai joué un rôle important dans l''amélioration de l''infrastructure interne de l''entreprise par la conception et / ou la mise en place de solutions de simulation, l''intégration continue et la distribution automatique de logiciels.'
+
+      - uid: 'realware'
+        position: 'Indépendant/Consultant'
+        organization: 'Realware'
+        description: 'Projets logiciels y compris leur conception, proposition, conception, programmation, documentation, installation et formation. Systèmes d''information adaptés aux besoins spécifiques des clients (vertical software) et exposés via des API (développement d''interfaces web et Android).'
+
+      - uid: 'abre'
+        position: 'Ingénieur de Projets et Stagiaire'
+        organization: 'Centre ABRE'
+        description: 'Centre de services professionnels et consulting. Gestion de projet: interactions avec les clients (propositions financières et négociation) et les experts du centre; définition des calendriers; délimiter les projets en objectifs spécifiques et mesurables; gestion budgétaire et communication des résultats. Participations en tant que expert dans certains projets.'
+
+      - uid: 'lcis-internship'
+        position: 'Stagiaire'
+        organization: 'LCIS - Esisar - Grenoble INP'
+        description: 'Système embarqué de vision par ordinateur pour le contrôle du véhicule. Contrôle et synchronisation de deux caméras avec un STM32. Traitement d''image sur le GPU d''une Raspberry (vision stéréoscopique).'
+
+      - uid: 'udem-vas-internship'
+        position: 'Stagiaire'
+        organization: 'Véhicule Autonome Supermile UDEM'
+        description: 'Programmation et intégration de MCUs dans un réseau CAN. Vision par ordinateur (détection de voie). Modélisation et simulation du véhicule et de son environnement. Participation à la conception du mécanisme (direction drive-by-wire).'
+
+      - uid: 'fukushima-internship'
+        position: 'Stagiaire'
+        organization: 'Fukushima Lab. Tokyo Institute of Technology'
+        description: 'Télétravail (visioconférences). Logiciel distribué connecté par middleware pour contrôler un robot de service: le robot réagit aux signaux détectés par une caméra. Validation dans un environnement de simulation 3D.'
+
+  education:
+    section_name: 'Éducation'
+    entries:
+      - uid: 'udem-engineering'
+        date: '2010 -- 2015'
+        program: 'Ingénieur en Mécatronique'
+        institution: 'Universidad de Monterrey (UDEM)'
+      - uid: 'cbtis-technician'
+        date: '2008 -- 2010'
+        program: 'Technicien en Informatique'
+        institution: 'CBTis 41'
+
+  languages:
+    section_name: 'Langues'
+    entries:
+      - uid: 'spanish'
+        name: 'Espagnol'
+        mother_tongue: true
+        level_description: 'Langue maternelle'
+        extra: 'Langue maternelle'
+      - uid: 'english'
+        name: 'Anglais'
+        level_description: 'Avancé'
+        level_understanding_listening: 'C2'
+        level_understanding_reading: 'C2'
+        level_speaking_interaction: 'C2'
+        level_speaking_production: 'C1'
+        level_writing_user: 'C2'
+        extra: 'TOEFL ITP score de 620 (18/11/2010)'
+      - uid: 'french'
+        name: 'Français'
+        level_description: 'Avancé'
+        level_understanding_listening: 'C1'
+        level_understanding_reading: 'C1'
+        level_speaking_interaction: 'C1'
+        level_speaking_production: 'C1'
+        level_writing_user: 'B2'
+        extra: 'J''habite en France depuis octobre 2016'
+
+  skills:
+    section_name: 'Compétences'
+    entries:
+      - uid: ''
+        name: 'Programation'
+        details: 'C, C++, ruby, Java, shell, javascript, PHP, assembly, VBA, lua, MySQL, git, svn.'
+
+      - uid: ''
+        name: 'MCUs et PLCs'
+        details: 'Microchip, STM32, Freescale, Festo. UART, SPI, I2C, CAN, DCMI, DMA.'
+
+      - uid: ''
+        name: 'Linux'
+        details: 'chroot, debian (sbuild, apt), ssh, scp, rsync, vim, systemd, netcat, etc.'
+
+      - uid: ''
+        name: 'Numérique'
+        details: 'MATLAB, GNU Octave, Scilab.'
+
+      - uid: ''
+        name: 'Robotique'
+        details: 'Open CV, ROS, Gazebo, V-REP, RT-Middleware.'
+
+      - uid: ''
+        name: 'GPGPU'
+        details: 'OpenGL, CUDA (notions).'
+
+      - uid: ''
+        name: 'CAD'
+        details: 'ProEngineer/CREO, Autodesk Inventor, NX.'
+
+      - uid: ''
+        name: 'Web'
+        details: 'Ruby on Rails, HTML, CSS, WebGL, apache, AWS EC2.'
+
+  awards:
+    section_name: 'Distinctions'
+    entries:
+      - uid: 'udem-engineering-cum-laude'
+        date: '2015'
+        name: 'Diplômé \emph{Cum Laude} de mes études d''ingénieur'
+        details: 'Distinction pour les étudiants ayant obtenu les meilleures performances.'
+
+      - uid: 'rocca'
+        date: '2014 -- 2015'
+        name: 'Roberto Rocca Education Program'
+        details: '\ghref{http://www.robertorocca.org/en/}{http://www.robertorocca.org/en/} \newline .Le programme est une initiative visant à attribuer des bourses à des étudiants dans les domaines de l''ingénierie et des sciences appliquées dans certains pays.'
+
+  time:
+    formats:
+      cv: "%b %Y"
+
+  date:
+    months: 'mois'
+    present: 'Présent'
+    abbr_month_names:
+      -
+      - Jan.
+      - Fev.
+      - Mars
+      - Avr.
+      - Mai
+      - Juin
+      - Juil
+      - Août
+      - Sep.
+      - Oct.
+      - Nov.
+      - Déc.
