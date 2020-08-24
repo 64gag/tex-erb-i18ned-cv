@@ -8,7 +8,7 @@ es:
     name:
       first: 'Pedro'
       last: 'Aguiar'
-    address: '1 rue Mayen, 38000 Grenoble, France'
+    address: '8 rue Casimir Brenier, 38000 Grenoble'
     email: 'paguiar32@gmail.com'
     phone:
       landline: '-'
