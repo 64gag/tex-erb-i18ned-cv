@@ -38,7 +38,10 @@
 
     url = professional_entry['url']
     url_archive = professional_entry['url_archive'] || url
-    right += "\\ghref{#{url_archive}}{#{url}} \\par \\vspace{2pt} "
+
+    unless url.nil? && url_archive.nil?
+      right += "\\ghref{#{url_archive}}{#{url}} \\par \\vspace{2pt} "
+    end
 
     right += "#{professional_entry['description']}"
 

@@ -30,7 +30,12 @@
 
     url = professional_entry['url']
     url_archive = professional_entry['url_archive'] || url
-    localization = "{\\footnotesize \\ghref{#{url_archive}}{#{url}}}"
+
+    if url.nil? && url_archive.nil?
+      localization = ''
+    else
+      localization = "{\\footnotesize \\ghref{#{url_archive}}{#{url}}}"
+    end
 
     description = professional_entry['description']
     if professional_entry['keywords'] && !professional_entry['keywords'].empty?
