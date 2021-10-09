@@ -4,29 +4,31 @@ common:
     entries:
       - uid: 'squadrone'
         date_start: '10/2016'
+        date_end: '11/2021'
+        duration_months: 61
         url: 'https://squadrone-system.com/'
-        keywords: 'Multicopters, SITL/HITL, CI, RTOS, MCU (STM32), Linux'
+        keywords: 'Linux, SITL/HITL, CI, RTOS, MCU (STM32), multicopters'
 
       - uid: 'realware'
         date_start: '01/2016'
         date_end: '09/2016'
         duration_months: 9
-        url: 'http://realware.com.mx/'
-        keywords: 'AWS (EC2, S3), Ruby on Rails, MySQL, REST API, javascript, Android, etc'
+        #url: 'http://realware.com.mx/'
+        keywords: 'Linux, SaaS, AWS (EC2, S3), Ruby on Rails, MySQL, REST API, javascript, Android, etc'
 
       - uid: 'abre'
         date_start: '08/2014'
         date_end: '12/2015'
         duration_months: 16
         url: 'https://www.centro-abre.com/'
-        keywords: 'project management, SMART objectives, consulting'
+        keywords: 'Project management, SMART objectives, consulting'
 
       - uid: 'lcis-internship'
         date_start: '04/2014'
         date_end: '08/2014'
         duration_months: 4.5
         url: 'http://lcis.grenoble-inp.fr/'
-        keywords: 'MCU (STM32), GPGPU, computer stereo vision, OpenCV, OpenGL ES, Linux'
+        keywords: 'Linux, MCU (STM32), GPGPU, computer stereo vision, OpenCV, OpenGL ES'
 
       - uid: 'udem-vas-internship'
         date_start: '08/2013'
@@ -41,4 +43,4 @@ common:
         duration_months: 5
         url_archive: 'https://web.archive.org/web/20190721220750/http://www.3mech.titech.ac.jp/ma_hirose/ma_hirose_e.html'
         url: 'http://www.3mech.titech.ac.jp/ma\_hirose/ma\_hirose\_e.html'
-        keywords: 'OpenCV, ROS, RT-Middleware, V-REP simulator, websockets'
+        keywords: 'Linux, OpenCV, ROS, RT-Middleware, V-REP simulator, websockets'

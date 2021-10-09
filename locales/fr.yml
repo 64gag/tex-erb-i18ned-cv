@@ -15,7 +15,6 @@ fr:
       mobile: '-'
 
   sites:
-    homepage: 'paguiar.net'
     github: 'paguiar'
     linkedin: ''
 
@@ -93,51 +92,51 @@ fr:
         level_speaking_interaction: 'C2'
         level_speaking_production: 'C1'
         level_writing_user: 'C2'
-        extra: 'TOEFL ITP score de 620 (18/11/2010)'
+        extra: 'Score de 620 dans le TOEFL ITP (18/11/2010)'
       - uid: 'french'
         name: 'Français'
         level_description: 'Avancé'
-        level_understanding_listening: 'C1'
+        level_understanding_listening: 'C2'
         level_understanding_reading: 'C1'
         level_speaking_interaction: 'C1'
         level_speaking_production: 'C1'
-        level_writing_user: 'B2'
-        extra: 'J''habite en France depuis octobre 2016'
+        level_writing_user: 'C2'
+        extra: 'Niveau C1-C2 dans le TCF-ANF (06/2021)'
 
   skills:
     section_name: 'Compétences'
     entries:
-      - uid: ''
+      - uid: 'programming'
         name: 'Programation'
         details: 'C, C++, ruby, Java, shell, javascript, PHP, assembly, VBA, lua, MySQL, git, svn.'
 
-      - uid: ''
-        name: 'MCUs et PLCs'
-        details: 'Microchip, STM32, Freescale, Festo. UART, SPI, I2C, CAN, DCMI, DMA.'
-
-      - uid: ''
+      - uid: 'linux'
         name: 'Linux'
         details: 'chroot, debian (sbuild, apt), ssh, scp, rsync, vim, systemd, netcat, etc.'
 
-      - uid: ''
+      - uid: 'web'
+        name: 'Web'
+        details: 'Ruby on Rails, HTML, CSS, WebGL, apache, AWS EC2.'
+
+      - uid: 'hardware'
+        name: 'MCUs et PLCs'
+        details: 'Microchip, STM32, Freescale, Festo. UART, SPI, I2C, CAN, DCMI, DMA.'
+
+      - uid: 'numerical'
         name: 'Numérique'
         details: 'MATLAB, GNU Octave, Scilab.'
 
-      - uid: ''
+      - uid: 'robotics'
         name: 'Robotique'
         details: 'Open CV, ROS, Gazebo, V-REP, RT-Middleware.'
 
-      - uid: ''
+      - uid: 'gpgpu'
         name: 'GPGPU'
         details: 'OpenGL, CUDA (notions).'
 
-      - uid: ''
+      - uid: 'cad'
         name: 'CAD'
         details: 'ProEngineer/CREO, Autodesk Inventor, NX.'
-
-      - uid: ''
-        name: 'Web'
-        details: 'Ruby on Rails, HTML, CSS, WebGL, apache, AWS EC2.'
 
   awards:
     section_name: 'Distinctions'
@@ -150,7 +149,7 @@ fr:
       - uid: 'rocca'
         date: '2014 -- 2015'
         name: 'Roberto Rocca Education Program'
-        details: '\ghref{http://www.robertorocca.org/en/}{http://www.robertorocca.org/en/} \newline .Le programme est une initiative visant à attribuer des bourses à des étudiants dans les domaines de l''ingénierie et des sciences appliquées dans certains pays.'
+        details: '\ghref{http://www.robertorocca.org/en/}{http://www.robertorocca.org/en/} \newline Le programme est une initiative visant à attribuer des bourses à des étudiants dans les domaines de l''ingénierie et des sciences appliquées dans certains pays.'
 
   time:
     formats:
