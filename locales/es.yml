@@ -106,17 +106,29 @@ es:
   skills:
     section_name: 'Habilidades'
     entries:
+      - uid: 'infrastructure'
+        name: 'Infraestructura'
+
+      - uid: 'architecture'
+        name: 'Arquitectura'
+
       - uid: 'programming'
         name: 'Programación'
 
       - uid: 'linux'
         name: 'Linux'
 
+      - uid: 'database'
+        name: 'Base de datos'
+
       - uid: 'web'
         name: 'Web'
 
-      - uid: 'hardware'
-        name: 'MCUs y PLCs'
+      - uid: 'embedded'
+        name: 'Embebidos'
+
+      - uid: 'mobile'
+        name: 'Móvil'
 
       - uid: 'numerical'
         name: 'Numéricos'
@@ -126,6 +138,9 @@ es:
 
       - uid: 'gpgpu'
         name: 'GPGPU'
+
+      - uid: 'gui'
+        name: 'GUI'
 
       - uid: 'cad'
         name: 'CAD'

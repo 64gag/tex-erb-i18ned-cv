@@ -47,26 +47,41 @@ common:
 
   skills:
     entries:
+      - uid: 'infrastructure'
+        keywords: 'Docker, CI (jenkins, gitlab), version control (git, svn), debian (sbuild, apt repositories)'
+
+      - uid: 'architecture'
+        keywords: 'UML, design patterns, requirements, layers, tiers'
+
       - uid: 'programming'
-        keywords: 'C, C++, ruby, Java, shell, javascript, PHP, assembly, VBA, lua, MySQL, git, svn.'
+        keywords: 'C, C++, ruby, Java, shell, javascript, PHP, assembly, VBA, lua'
 
       - uid: 'linux'
-        keywords: 'chroot, debian (sbuild, apt), ssh, scp, rsync, vim, systemd, netcat, etc.'
+        keywords: 'systemd, ssh, (s)chroot, vim, netcat, etc'
+
+      - uid: 'database'
+        keywords: 'MySQL, SQLite'
 
       - uid: 'web'
-        keywords: 'Ruby on Rails, HTML, CSS, WebGL, apache, AWS EC2.'
+        keywords: 'Ruby on Rails, REST API, AWS, HTML, CSS, WebGL'
 
-      - uid: 'hardware'
-        keywords: 'Microchip, STM32, Freescale, Festo. UART, SPI, I2C, CAN, DCMI, DMA.'
+      - uid: 'embedded'
+        keywords: 'SoCs (STM32, Microchip, Freescale), RTOS (NuttX, FreeRTOS), low-level peripherals'
+
+      - uid: 'mobile'
+        keywords: 'Android (basic)'
 
       - uid: 'numerical'
-        keywords: 'MATLAB, GNU Octave, Scilab.'
+        keywords: 'MATLAB, GNU Octave, Scilab'
 
       - uid: 'robotics'
-        keywords: 'Open CV, ROS, Gazebo, V-REP, RT-Middleware.'
+        keywords: 'OpenCV, ROS, ROS2, Gazebo, V-REP, RT-Middleware, PIDs'
 
       - uid: 'gpgpu'
-        keywords: 'OpenGL, CUDA (notions).'
+        keywords: 'OpenGL, CUDA (notions)'
+
+      - uid: 'gui'
+        keywords: 'Qt, GTK'
 
       - uid: 'cad'
-        keywords: 'ProEngineer/CREO, Autodesk Inventor, NX.'
+        keywords: 'ProEngineer/CREO, Autodesk Inventor, NX'
