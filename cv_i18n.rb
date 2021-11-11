@@ -18,18 +18,19 @@ class CvI18n
   def build_hash_from_hashes(hash_common, hash_locale)
     @hash = hash_locale
 
-    merge_common_hash_in(hash_common)
+    merge_common_hash_in(hash_common, 'professional')
+    merge_common_hash_in(hash_common, 'skills')
     expand_dates
 
     #puts JSON.pretty_generate(@hash)
     #puts JSON.pretty_generate(@hash['professional']['entries'])
   end
 
-  def merge_common_hash_in(hash_common)
-    hash_common['professional']['entries'].each do |entry|
+  def merge_common_hash_in(hash_common, root_key)
+    hash_common[root_key]['entries'].each do |entry|
       if entry['uid']
         target_uid = entry['uid']
-        @hash['professional']['entries'].map! do |entry_member|
+        @hash[root_key]['entries'].map! do |entry_member|
           if entry_member['uid'] == target_uid
             entry_member.merge(entry)
           else

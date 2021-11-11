@@ -145,7 +145,7 @@
 
 <%- cv_i18n.t("skills.entries").each do |entry| -%>
   <%- left = entry['name'] %>
-  <%- right = entry['details'] %>
+  <%- right = entry['keywords'] %>
   <%= ecvitem(left: left, right: right) %>
 <%- end -%>
 

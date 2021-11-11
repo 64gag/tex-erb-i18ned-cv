@@ -18,7 +18,7 @@ install-deps:
 	sed "s/CV_LOCALE/$(locale)/g" $< > $@
 
 # TODO Check specific yml for given language (and not all of them)
-%.pdf.tex: %.pdf.tex.erb locales/*.yml
+%.pdf.tex: %.pdf.tex.erb locales/*.yml cv_i18n.rb
 	erb -T - $< > $@
 
 %.pdf: final_basename = $(basename $(basename $(notdir $<)))

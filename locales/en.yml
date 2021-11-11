@@ -6,16 +6,16 @@ en:
 
   contact:
     name:
-      first: 'P.'
+      first: 'G.'
       last: 'Aguiar'
     address: '8 rue Casimir Brenier, 38000 Grenoble'
-    email: 'paguiar32@gmail.com'
+    email: '64gag@protonmail.com'
     phone:
       landline: '-'
       mobile: '-'
 
   sites:
-    github: 'paguiar'
+    github: '64gag'
     linkedin: ''
 
   personal:
@@ -108,35 +108,27 @@ en:
     entries:
       - uid: 'programming'
         name: 'Programming'
-        details: 'C, C++, ruby, Java, shell, javascript, PHP, assembly, VBA, lua, MySQL, git, svn.'
 
       - uid: 'linux'
         name: 'Linux'
-        details: 'chroot, debian (sbuild, apt), ssh, scp, rsync, vim, systemd, netcat, etc.'
 
       - uid: 'web'
         name: 'Web'
-        details: 'Ruby on Rails, HTML, CSS, WebGL, apache, AWS EC2.'
 
       - uid: 'hardware'
         name: 'MCUs and PLCs'
-        details: 'Microchip, STM32, Freescale, Festo. UART, SPI, I2C, CAN, DCMI, DMA.'
 
       - uid: 'numerical'
         name: 'Numerical'
-        details: 'MATLAB, GNU Octave, Scilab.'
 
       - uid: 'robotics'
         name: 'Robotics'
-        details: 'Open CV, ROS, Gazebo, V-REP, RT-Middleware.'
 
       - uid: 'gpgpu'
         name: 'GPGPU'
-        details: 'OpenGL, CUDA (notions).'
 
       - uid: 'cad'
         name: 'CAD'
-        details: 'ProEngineer/CREO, Autodesk Inventor, NX.'
 
   awards:
     section_name: 'Awards'

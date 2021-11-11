@@ -129,7 +129,7 @@
 \section{<%= cv_i18n.t('skills.section_name') %>}
 
 <%- cv_i18n.t("skills.entries").each do |entry| -%>
-  <%= cvitem(subtitle: entry['name'], text: entry['details']) %>
+  <%= cvitem(subtitle: entry['name'], text: entry['keywords']) %>
 <%- end -%>
 
 % ----------------------------------------------------------------- %

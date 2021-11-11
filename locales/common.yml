@@ -4,8 +4,8 @@ common:
     entries:
       - uid: 'squadrone'
         date_start: '10/2016'
-        date_end: '11/2021'
-        duration_months: 61
+        date_end: '12/2021'
+        duration_months: 62
         url: 'https://squadrone-system.com/'
         keywords: 'Linux, SITL/HITL, CI, RTOS, MCU (STM32), multicopters'
 
@@ -44,3 +44,29 @@ common:
         url_archive: 'https://web.archive.org/web/20190721220750/http://www.3mech.titech.ac.jp/ma_hirose/ma_hirose_e.html'
         url: 'http://www.3mech.titech.ac.jp/ma\_hirose/ma\_hirose\_e.html'
         keywords: 'Linux, OpenCV, ROS, RT-Middleware, V-REP simulator, websockets'
+
+  skills:
+    entries:
+      - uid: 'programming'
+        keywords: 'C, C++, ruby, Java, shell, javascript, PHP, assembly, VBA, lua, MySQL, git, svn.'
+
+      - uid: 'linux'
+        keywords: 'chroot, debian (sbuild, apt), ssh, scp, rsync, vim, systemd, netcat, etc.'
+
+      - uid: 'web'
+        keywords: 'Ruby on Rails, HTML, CSS, WebGL, apache, AWS EC2.'
+
+      - uid: 'hardware'
+        keywords: 'Microchip, STM32, Freescale, Festo. UART, SPI, I2C, CAN, DCMI, DMA.'
+
+      - uid: 'numerical'
+        keywords: 'MATLAB, GNU Octave, Scilab.'
+
+      - uid: 'robotics'
+        keywords: 'Open CV, ROS, Gazebo, V-REP, RT-Middleware.'
+
+      - uid: 'gpgpu'
+        keywords: 'OpenGL, CUDA (notions).'
+
+      - uid: 'cad'
+        keywords: 'ProEngineer/CREO, Autodesk Inventor, NX.'
