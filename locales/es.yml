@@ -25,24 +25,25 @@ es:
 
   interests:
     section_name: 'Intereses'
-    title: 'Software embebido y Linux'
-    description: 'Ingeniero en Mecatrónica, especializado y apasionado en Ingeniería de Software.
-    Me atraen los proyectos de alto impacto, retadores y ambiciosos en los que pueda contribuir y aprender dentro de un equipo diverso y de excelencia.
-    Mis principales áreas de interés profesional son los sistemas embebidos, Linux, el procesamiento digital de señales, la computación distribuida, la arquitectura de software y la automatización aplicada al software (pruebas y validación, distribución, ...).
-    Considero entre mis aptitudes más importantes el ser autodidacta, pragmático y metódico; así como mis capacidades de aplicar conocimiento técnico para la solución de problemas y de trabajar bajo presión.'
+    title: 'Consultor en Ingeniería de Software'
+    description: 'Ingeniero en Mecatrónica, especializado en Ingeniería de Software. Disponible para trabajar con clientes buscando soluciones que correspondan a los servicios que ofrezco como Consultor en Ingeniería de Software. \newline
+      Me atraen los proyectos de alto impacto, retadores y ambiciosos en los que pueda contribuir a los objetivos de una compañía con alto compromiso con la excelencia. Mis principales áreas de interés profesional son Linux, los sistemas embebidos, la arquitectura de software, la infraestructura/automatización aplicada al software (pruebas y validación, distribución, actualización, ...), el procesamiento digital de señales  y la computación distribuida. \newline
+    Considero entre mis aptitudes más importantes el ser metódico, eficaz y autónomo.'
 
   professional:
     section_name: 'Experiencia profesional'
     entries:
       - uid: 'squadrone'
-        position: 'Ingeniero de Software R\&D'
+        position: 'Ingeniero de Software'
         organization: 'Squadrone System'
-        description: 'Desarrollo de software (múltiples niveles) para drones orientados a aplicaciones industriales. Los drones son sistemas complejos y retadores que exigen un alto nivel de excelencia en las prácticas de ingeniería aplicadas durante todo su ciclo de desarrollo. Parte importante en la mejora de la infraestructura interna de la empresa mediante el diseño y/o implementación de soluciones de simulación, integración continua y distribución automática de software.'
+        description: 'Ingeniería de software para drones diseñados para aplicaciones industriales. Trabajé con diferentes clientes (10-15) así como en múltiples proyectos R\&D internos. Contribuí a la mayor parte del stack de software de la compañía. \newline
+          Los errores de sofware en los drones son costosos y peligrosos. Tuve un rol clave en la mejora de la infraestructura interna de la compañía mediante el diseño, propuesta y/o implementación de soluciones involucrando mejores procesos, pruebas automáticas, integración continua y simulación para \textbf{mejorar la calidad y reducir costos}.'
 
       - uid: 'realware'
         position: 'Independiente/Consultor'
         organization: 'Realware'
-        description: 'Proyectos de software incluyendo su concepción, propuesta, diseño, programación, documentación, instalación y capacitación. Sistemas de información adaptados a necesidades específicas de clientes (software vertical) y expuestos mediante APIs (desarrollo de interfaces web y Android).'
+        description: 'Ejecución de cuatro proyectos de software para clientes diferentes. Trabajé solo en todos los proyectos desde los requerimientos y propuesta, el diseño, la programación y la documentación, hasta el despliegue, la instalación y la formación. \newline
+          Tres de los proyectos eran aplicaciones en Rails, dos de ellos estaban alojados en la nube (AWS) y uno en un servidor local. Trabajé con autenticación, autorización, compartimiento y alojamiento de archivos (S3 y local), recolección de imágenes (desde terminales móviles) y generación de reportes (PDF). El último proyecto era una aplicación Android para controlar el lector RFID integrado en un smartphone en particular.'
 
       - uid: 'abre'
         position: 'Ingeniero de Proyectos y Practicante'

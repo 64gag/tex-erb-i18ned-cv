@@ -4,17 +4,17 @@ common:
     entries:
       - uid: 'squadrone'
         date_start: '10/2016'
-        date_end: '12/2021'
-        duration_months: 62
+        date_end: '01/2022'
+        duration_months: 63
         url: 'https://squadrone-system.com/'
-        keywords: 'Linux, SITL/HITL, CI, RTOS, MCU (STM32), multicopters'
+        keywords: 'C++, Linux, SITL/HITL, CI, RTOS, MCU (STM32), multicopters, networking, GUI'
 
       - uid: 'realware'
         date_start: '01/2016'
         date_end: '09/2016'
         duration_months: 9
         #url: 'http://realware.com.mx/'
-        keywords: 'Linux, SaaS, AWS (EC2, S3), Ruby on Rails, MySQL, REST API, javascript, Android, etc'
+        keywords: 'Ruby on Rails, Linux, SaaS, AWS (EC2, S3), REST API, javascript, Android, RFID'
 
       - uid: 'abre'
         date_start: '08/2014'
@@ -28,22 +28,22 @@ common:
         date_end: '08/2014'
         duration_months: 4.5
         url: 'http://lcis.grenoble-inp.fr/'
-        keywords: 'Linux, MCU (STM32), GPGPU, computer stereo vision, OpenCV, OpenGL ES'
+        keywords: 'C++, Linux, MCU (STM32), GPGPU, computer stereo vision, OpenCV, OpenGL ES'
 
       - uid: 'udem-vas-internship'
         date_start: '08/2013'
         date_end: '05/2014'
         duration_months: 10
         url: 'http://udem.edu/'
-        keywords: 'MCU (Microchip), OpenCV, SITL, dynamic modeling'
+        keywords: 'C++, MCU (Microchip), OpenCV, SITL, dynamic modeling'
 
       - uid: 'fukushima-internship'
-        date_start: '01/2012'
+        date_start: '08/2012'
         date_end: '05/2013'
-        duration_months: 5
+        duration_months: 8
         url_archive: 'https://web.archive.org/web/20190721220750/http://www.3mech.titech.ac.jp/ma_hirose/ma_hirose_e.html'
         url: 'http://www.3mech.titech.ac.jp/ma\_hirose/ma\_hirose\_e.html'
-        keywords: 'Linux, OpenCV, ROS, RT-Middleware, V-REP simulator, websockets'
+        keywords: 'C++, Linux, OpenCV, ROS, RT-Middleware, V-REP simulator, websockets'
 
   skills:
     entries:
@@ -54,7 +54,7 @@ common:
         keywords: 'UML, design patterns, requirements, layers, tiers'
 
       - uid: 'programming'
-        keywords: 'C, C++, ruby, Java, shell, javascript, PHP, assembly, VBA, lua'
+        keywords: 'C++, C, ruby, javascript, Java, shell, PHP, assembly, VBA, lua'
 
       - uid: 'linux'
         keywords: 'systemd, ssh, (s)chroot, vim, netcat, etc'

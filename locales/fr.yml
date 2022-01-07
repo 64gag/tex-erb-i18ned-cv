@@ -25,34 +25,35 @@ fr:
 
   interests:
     section_name: 'Intérêts'
-    title: 'Software embarqué et Linux'
-    description: 'Ingénieur en Mécatronique, spécialisé et passionné de l''informatique.
-     Je suis attiré par des projets à fort impact, stimulants et ambitieux où je peux contribuer et apprendre au sein d''une équipe diversifiée et avec une forte valeur de l''excellente.
-     Mes principaux domaines d''intérêt professionnel sont les systèmes embarqués, Linux, le traitement numérique du signal, l''informatique distribuée, l''architecture logicielle et l''automatisation appliquée aux logiciels (test et validation, distribution, ...).
-     Je considère parmi mes aptitudes les plus importantes celle d''être autodidacte, pragmatique et méthodique; ainsi que mes capacités à appliquer des connaissances techniques pour résoudre des problèmes et travailler sous pression.'
+    title: 'Consultant Informatique'
+    description: 'Ingénieur en Mécatronique, spécialisé en informatique. Disponible pour travailler avec des clients à la recherche des solutions qui correspondent aux services que je propose en tant que Consultant Informatique. \newline
+     Je suis attiré par des projets à fort impact, stimulants et ambitieux où je puisse contribuer aux objectifs d''une société avec une forte valeur de l''excellence. Mes principaux domaines d''intérêt professionnel sont Linux, les systèmes embarqués, l''architecture logicielle, l''infrastructure / l''automatisation appliquées au logiciel (test et validation, distribution, mises à jour, ...), le traitement numérique du signal et l''informatique distribuée. \newline
+     Je considère parmi mes aptitudes les plus importantes celles d''être méthodique, efficace et autonome.'
 
   professional:
     section_name: 'Expérience professionnelle'
     entries:
       - uid: 'squadrone'
-        position: 'Ingénieur Logiciel R\&D'
+        position: 'Ingénieur Logiciel'
         organization: 'Squadrone System'
-        description: 'Développement logiciel (plusieurs niveaux) pour drones orientés vers les applications industrielles. Les drones sont des systèmes complexes qui exigent un haut niveau d''excellence dans les pratiques d''ingénierie appliquée tout au long de leur cycle de développement. J''ai joué un rôle important dans l''amélioration de l''infrastructure interne de l''entreprise par la conception et / ou la mise en place de solutions de simulation, l''intégration continue et la distribution automatique de logiciels.'
+        description: 'De l''ingénierie logicielle pour drones conçus pour des applications industrielles. J''ai travaillé pour plusieurs clients différents (10-15), tout comme pour des projets R\&D en interne. J''ai contribué à la plupart du stack logiciel de la société. \newline
+          Les erreurs logicielles dans les drones sont coûteux et dangereux. J''ai joué un rôle clé dans l''amélioration de l''infrastructure interne de l''entreprise à travers la conception, la proposition et / ou l''implémentation de solutions composées de meilleures procédures, des tests automatiques, de l''intégration continue et de la simulation pour \textbf{améliorer la qualité et réduire les coûts}.'
 
       - uid: 'realware'
         position: 'Indépendant/Consultant'
         organization: 'Realware'
-        description: 'Projets logiciels y compris leur conception, proposition, conception, programmation, documentation, installation et formation. Systèmes d''information adaptés aux besoins spécifiques des clients (vertical software) et exposés via des API (développement d''interfaces web et Android).'
+        description: 'Exécution de quatre projets logiciels pour des clients différents. J''ai travaillé tout seul dès la définition de cahier de charges, l''élaboration de la proposition, la conception, la programmation et la documentation, jusqu''au déploiement, l''installation et la formation. \newline
+          Trois projets étaient des applications en Rails, dont deux étaient hébergés dans le cloud (AWS) et l''autre dans un serveur local. Parmi les capacités implémentées il y avait de l''authentification, de l''autorisation, du partage et stockage de fichiers (S3 et local), de la récollection d''images (depuis des terminaux mobiles) et de la génération de rapports (PDF). Le dernier projet consistait d''une application Android pour piloter le lecteur RFID intégré à un smartphone.'
 
       - uid: 'abre'
         position: 'Ingénieur de Projets et Stagiaire'
         organization: 'Centre ABRE'
-        description: 'Centre de services professionnels et consulting. Gestion de projet: interactions avec les clients (propositions financières et négociation) et les experts du centre; définition des calendriers; délimiter les projets en objectifs spécifiques et mesurables; gestion budgétaire et communication des résultats. Participations en tant que expert dans certains projets.'
+        description: 'Centre de services professionnels et consulting. Gestion de projets: interactions avec les clients (propositions financières et négociation) et les experts du centre; définition des plannings; délimiter les projets en objectifs spécifiques et mesurables; gestion budgétaire et communication des résultats. Participations en tant que expert dans certains projets.'
 
       - uid: 'lcis-internship'
         position: 'Stagiaire'
         organization: 'LCIS - Esisar - Grenoble INP'
-        description: 'Système embarqué de vision par ordinateur pour le contrôle du véhicule. Contrôle et synchronisation de deux caméras avec un STM32. Traitement d''image sur le GPU d''une Raspberry (vision stéréoscopique).'
+        description: 'Système embarqué de vision pour le contrôle d''un véhicule. Contrôle et synchronisation de deux caméras avec un STM32. Traitement sur le GPU d''une Raspberry (vision stéréoscopique).'
 
       - uid: 'udem-vas-internship'
         position: 'Stagiaire'

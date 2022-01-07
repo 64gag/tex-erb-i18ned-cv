@@ -25,29 +25,30 @@ en:
 
   interests:
     section_name: 'Interests'
-    title: 'Embedded Software and Linux'
-    description: 'Mechatronics Engineer, specialized and passionate about Software Engineering.
-    I am interested on projects that are impactful, challenging and ambitious on which I can contribute and learn within a team of diversity and excellence.
-    My main professional interests fields are the embedded systems, Linux, digital signal processing, distributed computing, software architecture and automation applied to software (tests and validation, distribution, ...).
-    I consider amongst my most valuable aptitudes being autodidact, pragmatic and methodic; as well as my capacity to apply technical knowledge to solve problems and to work under pressure.'
+    title: 'Software Engineering Consultant'
+    description: 'Mechatronics Engineer, specialized in Software Engineering. Available to work with clients looking for solutions matching the services I offer as a Software Engineering Consultant. \newline
+    I am interested in projects that are impactful, challenging and ambitious on which I could contribute to the objectives of a company commited to excellence. My main professional interests fields are Linux, embedded systems, software architecture, infrastructure/automation applied to software (tests and validation, distribution, updates, ...), digital signal processing and distributed computing. \newline
+    I consider amongst my most valuable aptitudes those of being methodic, effective and autonomous.'
 
   professional:
     section_name: 'Work experience'
     entries:
       - uid: 'squadrone'
-        position: 'R\&D Software Engineer'
+        position: 'Software Engineer'
         organization: 'Squadrone System'
-        description: 'Software development (multiple levels) for drones aimed towards industrial applications. Drones are complex and challenging systems that demand a high level of excellence to the engineering practices applied during their whole development cycle. I played an important role in the improvement of the internal infrastructure of the company through the design and/or implementation of solutions involving simulation, continuous integration and continuous delivery.'
+        description: 'Software engineering for drones aimed towards industrial applications. Worked with different clients (10-15) as well as in multiple internal R\&D projects. Contributed to most of the stack of the company''s software. \newline
+          Software errors in drones are costly and dangerous. I played an key role in the improvement of the internal infrastructure of the company by designing, proposing and/or implementing solutions involving better processes, automated testing, continuous integration and simulation to \textbf{improve quality and reduce costs}.'
 
       - uid: 'realware'
         position: 'Freelancer/Consultant'
         organization: 'Realware'
-        description: 'Software projects including their conception, proposal, design, programming, documentation, installation and training. Information systems made to fit specific client needs (vertical software) and exposed through APIs (development of web and Android interfaces).'
+        description: 'Delivered four independent software projects to four different clients. Worked alone in all the projects from the requirements and proposal, through design, programming and documentation, all the way up to their deployment/installation and training. \newline
+          Three of the projects were Rails applications, two were hosted on the cloud (AWS) and one was installed on a local server. They involved authentication, authorization, file-sharing and storage (S3 and locally), image collecting (from mobile phone endpoints) and report generation (PDF). The last project was an Android application to drive the integrated RFID reader of a particular smartphone.'
 
       - uid: 'abre'
         position: 'Project Engineer and Intern'
         organization: 'ABRE Center'
-        description: 'Professional services and consulting center. Project management: interactions with clients (economic proposals and negotiation) and consultants; defining schedules; delimit project in specific and measurable goals; budgets management and results reporting. Participations as consultant in some projects.'
+        description: 'ABRE is a professional services and consulting center. Project management: interactions with clients (economic proposals and negotiation) and consultants; defining schedules; delimit project in specific and measurable goals; budgets management and results reporting. Participation as consultant in some projects.'
 
       - uid: 'lcis-internship'
         position: 'Intern'
