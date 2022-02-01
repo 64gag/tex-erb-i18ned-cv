@@ -17,5 +17,5 @@ RUN apt-get install -q -y --no-install-recommends texlive-lang-english texlive-l
 RUN apt-get clean
 RUN rm -rf /var/lib/apt/lists/*
 
-RUN mkdir -p /opt/gag/workspace
-WORKDIR /opt/gag/workspace
+RUN mkdir -p /venv/workspace
+WORKDIR /venv/workspace

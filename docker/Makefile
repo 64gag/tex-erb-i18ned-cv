@@ -7,4 +7,4 @@ build:
 
 .PHONY: run
 run: build
-	docker container run --rm --interactive --tty --volume $(shell pwd)/..:/opt/gag/workspace generic-cv
+	docker container run --rm --interactive --tty --volume $(shell pwd)/..:/venv/workspace generic-cv
