@@ -9,14 +9,14 @@ en:
       first: 'G.'
       last: 'Aguiar'
     address: '8 rue Casimir Brenier, 38000 Grenoble'
-    email: '64gag@protonmail.com'
+    email: 'gael.aguiar@kymasoft.com'
     phone:
       landline: '-'
       mobile: '-'
 
   sites:
     github: '64gag'
-    linkedin: ''
+    linkedin: 'gael-aguiar'
 
   personal:
     date_of_birth: '10/05/1992'
@@ -26,8 +26,8 @@ en:
   interests:
     section_name: 'Interests'
     title: 'Software Engineering Consultant'
-    description: 'Mechatronics Engineer, specialized in Software Engineering. Available to work with clients looking for solutions matching the services I offer as a Software Engineering Consultant. \newline
-    I am interested in projects that are impactful, challenging and ambitious on which I could contribute to the objectives of a company commited to excellence. My main professional interests fields are Linux, embedded systems, software architecture, infrastructure/automation applied to software (tests and validation, distribution, updates, ...), digital signal processing and distributed computing. \newline
+    description: 'Software Engineering Consultant: Mechatronics Engineer, specialized in Software Engineering. Available to work with companies looking for solutions for the definition, architecture, design, infrastructure, management, training or implementation of software projects. \newline
+    I am interested in projects that are impactful, challenging and ambitious on which I could contribute to the objectives of teams committed to excellence. My main professional interests fields are Linux, embedded systems, software architecture, infrastructure/automation applied to software (tests and validation, distribution, updates, ...), digital signal processing and distributed computing. \newline
     I consider amongst my most valuable aptitudes those of being methodic, effective and autonomous.'
 
   professional:

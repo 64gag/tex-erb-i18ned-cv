@@ -9,14 +9,14 @@ es:
       first: 'Gael'
       last: 'Aguiar'
     address: '8 rue Casimir Brenier, 38000 Grenoble'
-    email: '64gag@protonmail.com'
+    email: 'gael.aguiar@kymasoft.com'
     phone:
       landline: '-'
       mobile: '-'
 
   sites:
     github: '64gag'
-    linkedin: ''
+    linkedin: 'gael-aguiar'
 
   personal:
     date_of_birth: '10/05/1992'
@@ -26,8 +26,8 @@ es:
   interests:
     section_name: 'Intereses'
     title: 'Consultor en Ingeniería de Software'
-    description: 'Ingeniero en Mecatrónica, especializado en Ingeniería de Software. Disponible para trabajar con clientes buscando soluciones que correspondan a los servicios que ofrezco como Consultor en Ingeniería de Software. \newline
-      Me atraen los proyectos de alto impacto, retadores y ambiciosos en los que pueda contribuir a los objetivos de una compañía con alto compromiso con la excelencia. Mis principales áreas de interés profesional son Linux, los sistemas embebidos, la arquitectura de software, la infraestructura/automatización aplicada al software (pruebas y validación, distribución, actualización, ...), el procesamiento digital de señales  y la computación distribuida. \newline
+    description: 'Consultor en Ingeniería de Software: Ingeniero en Mecatrónica, especializado en Ingeniería de Software. Disponible para trabajar con compañías en busqueda de soluciones de definición, arquitectura, diseño, infraestructura, gestión, formación o implementación de proyectos de software. \newline
+      Me atraen los proyectos de alto impacto, retadores y ambiciosos en los que pueda contribuir a los objetivos de equipos con alto compromiso con la excelencia. Mis principales áreas de interés profesional son Linux, los sistemas embebidos, la arquitectura de software, la infraestructura/automatización aplicada al software (pruebas y validación, distribución, actualización, ...), el procesamiento digital de señales  y la computación distribuida. \newline
     Considero entre mis aptitudes más importantes el ser metódico, eficaz y autónomo.'
 
   professional:
