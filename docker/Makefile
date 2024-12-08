@@ -1,10 +1,10 @@
 .PHONY: all
-all: build run
+all: build
 
 .PHONY: build
 build:
-	docker image build -t generic-cv .
+	docker image build -t 64gag/tex-erb-i18ned-cv:latest .
 
-.PHONY: run
-run: build
-	docker container run --rm --interactive --tty --volume $(shell pwd)/..:/venv/workspace generic-cv
+.PHONY: push
+push:
+	docker image push 64gag/tex-erb-i18ned-cv:latest
