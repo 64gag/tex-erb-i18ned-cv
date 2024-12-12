@@ -1,9 +1,5 @@
 ---
 en:
-  ecv:
-    language: 'english'
-    footnote: '© European Union, 2002-2013'
-
   contact:
     name:
       first: 'G.'
@@ -33,6 +29,11 @@ en:
   professional:
     section_name: 'Work experience'
     entries:
+      - uid: 'kymasoft'
+        position: 'Freelancer/Consultant'
+        organization: 'KYMASOFT'
+        description: 'TODO.'
+
       - uid: 'squadrone'
         position: 'Software Engineer'
         organization: 'Squadrone System'

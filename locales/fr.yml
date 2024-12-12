@@ -1,14 +1,10 @@
 ---
 fr:
-  ecv:
-    language: 'french'
-    footnote: '© Union Européenne, 2002-2013'
-
   contact:
     name:
       first: 'Gael'
       last: 'AGUIAR'
-    address: '8 rue Casimir Brenier, 38000 Grenoble'
+    address: '18T rue d''Alembert, 38000 Grenoble'
     email: 'gael.aguiar@kymasoft.com'
     phone:
       landline: '-'
@@ -33,6 +29,12 @@ fr:
   professional:
     section_name: 'Expérience professionnelle'
     entries:
+      - uid: 'kymasoft'
+        position: 'Freelancer / Consultant'
+        organization: 'KYMASOFT'
+        description: 'Prestation dans l''équipe Software Applicatif d''un bureau d''études responsable de plusieurs produits embarqués industriels. Implémentation de nouveaux protocoles de communication série, écriture de tests unitaires, débugagge et analyse d''anomalies, etc. \newline
+          Développement d''un prototype d''application Android.'
+
       - uid: 'squadrone'
         position: 'Ingénieur Logiciel'
         organization: 'Squadrone System'
@@ -40,7 +42,7 @@ fr:
           Les erreurs logicielles dans les drones sont coûteux et dangereux. J''ai joué un rôle clé dans l''amélioration de l''infrastructure interne de l''entreprise à travers la conception, la proposition et / ou l''implémentation de solutions composées de meilleures procédures, des tests automatiques, de l''intégration continue et de la simulation pour \textbf{améliorer la qualité et réduire les coûts}.'
 
       - uid: 'realware'
-        position: 'Indépendant/Consultant'
+        position: 'Indépendant / Consultant'
         organization: 'Realware'
         description: 'Exécution de quatre projets logiciels pour des clients différents. J''ai travaillé tout seul dès la définition de cahier de charges, l''élaboration de la proposition, la conception, la programmation et la documentation, jusqu''au déploiement, l''installation et la formation. \newline
           Trois projets étaient des applications en Rails, dont deux étaient hébergés dans le cloud (AWS) et l''autre dans un serveur local. Parmi les capacités implémentées il y avait de l''authentification, de l''autorisation, du partage et stockage de fichiers (S3 et local), de la récollection d''images (depuis des terminaux mobiles) et de la génération de rapports (PDF). Le dernier projet consistait d''une application Android pour piloter le lecteur RFID intégré à un smartphone.'
@@ -98,10 +100,10 @@ fr:
         name: 'Français'
         level_description: 'Avancé'
         level_understanding_listening: 'C2'
-        level_understanding_reading: 'C1'
-        level_speaking_interaction: 'C1'
+        level_understanding_reading: 'C2'
+        level_speaking_interaction: 'C2'
         level_speaking_production: 'C1'
-        level_writing_user: 'C2'
+        level_writing_user: 'C1'
         extra: 'Niveau C1-C2 dans le TCF-ANF (06/2021)'
 
   skills:

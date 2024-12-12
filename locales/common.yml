@@ -2,6 +2,11 @@
 common:
   professional:
     entries:
+      - uid: 'kymasoft'
+        date_start: '02/2022'
+        url: 'https://kymasoft.com/'
+        keywords: 'C++, Linux, Android, networking, serial protocols, MQTT, docker'
+
       - uid: 'squadrone'
         date_start: '10/2016'
         date_end: '01/2022'

@@ -1,9 +1,5 @@
 ---
 es:
-  ecv:
-    language: 'spanish'
-    footnote: '© Unión Europea, 2002-2013'
-
   contact:
     name:
       first: 'Gael'
@@ -33,6 +29,11 @@ es:
   professional:
     section_name: 'Experiencia profesional'
     entries:
+      - uid: 'kymasoft'
+        position: 'Independiente/Consultor'
+        organization: 'KYMASOFT'
+        description: 'TODO.'
+
       - uid: 'squadrone'
         position: 'Ingeniero de Software'
         organization: 'Squadrone System'
