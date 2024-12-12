@@ -2,12 +2,19 @@
 common:
   professional:
     entries:
+      - uid: 'lumiplan'
+        date_start: '04/2022'
+        date_end: '11/2024'
+        duration_months: 31
+        url: 'https://lumiplan.com/'
+        keywords: 'C++, Linux, docker, gitlab, jenkins, networking, HTTP/REST, MQTT, ITxPT, IoT, SSE, SNMP, RS232, SQL'
+
       - uid: 'squadrone'
         date_start: '10/2016'
         date_end: '01/2022'
         duration_months: 63
         url: 'https://squadrone-system.com/'
-        keywords: 'C++, Linux, SITL/HITL, CI, RTOS, MCU (STM32), multicopters, networking, GUI'
+        keywords: 'C++, Linux, docker, jenkins, SITL/HITL, CI, RTOS, MCU (STM32), multicopters, networking, GUI'
 
       - uid: 'realware'
         date_start: '01/2016'
@@ -54,7 +61,7 @@ common:
         keywords: 'UML, design patterns, requirements, layers, tiers'
 
       - uid: 'programming'
-        keywords: 'C++, C, ruby, javascript, Java, shell, PHP, assembly, VBA, lua'
+        keywords: 'C++, C, kotlin, ruby, javascript, Java, shell, PHP, assembly, VBA, lua'
 
       - uid: 'linux'
         keywords: 'systemd, ssh, (s)chroot, vim, netcat, etc'
@@ -69,7 +76,7 @@ common:
         keywords: 'SoCs (STM32, Microchip, Freescale), RTOS (NuttX, FreeRTOS), low-level peripherals'
 
       - uid: 'mobile'
-        keywords: 'Android (basic)'
+        keywords: 'Android (compose)'
 
       - uid: 'numerical'
         keywords: 'MATLAB, GNU Octave, Scilab'

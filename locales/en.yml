@@ -1,14 +1,10 @@
 ---
 en:
-  ecv:
-    language: 'english'
-    footnote: '© European Union, 2002-2013'
-
   contact:
     name:
       first: 'G.'
       last: 'Aguiar'
-    address: '8 rue Casimir Brenier, 38000 Grenoble'
+    address: '18T rue d''Alembert, 38000 Grenoble'
     email: 'gael.aguiar@kymasoft.com'
     phone:
       landline: '-'
@@ -17,6 +13,7 @@ en:
   sites:
     github: '64gag'
     linkedin: 'gael-aguiar'
+    homepage: 'https://kymasoft.com'
 
   personal:
     date_of_birth: '10/05/1992'
@@ -33,6 +30,11 @@ en:
   professional:
     section_name: 'Work experience'
     entries:
+      - uid: 'lumiplan'
+        position: 'Software Engineer (Consultant)'
+        organization: 'Lumiplan'
+        description: 'TODO.'
+
       - uid: 'squadrone'
         position: 'Software Engineer'
         organization: 'Squadrone System'
@@ -98,10 +100,10 @@ en:
         name: 'French'
         level_description: 'Advanced'
         level_understanding_listening: 'C2'
-        level_understanding_reading: 'C1'
-        level_speaking_interaction: 'C1'
+        level_understanding_reading: 'C2'
+        level_speaking_interaction: 'C2'
         level_speaking_production: 'C1'
-        level_writing_user: 'C2'
+        level_writing_user: 'C1'
         extra: 'C1-C2 level in the TCF-ANF (06/2021)'
 
   skills:
