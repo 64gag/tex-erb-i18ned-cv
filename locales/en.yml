@@ -22,30 +22,37 @@ en:
 
   interests:
     section_name: 'Interests'
-    title: 'Software Engineering Consultant'
-    description: 'Software Engineering Consultant: Mechatronics Engineer, specialized in Software Engineering. Available to work with companies looking for solutions for the definition, architecture, design, infrastructure, management, training or implementation of software projects. \newline
-    I am interested in projects that are impactful, challenging and ambitious on which I could contribute to the objectives of teams committed to excellence. My main professional interests fields are Linux, embedded systems, software architecture, infrastructure/automation applied to software (tests and validation, distribution, updates, ...), digital signal processing and distributed computing. \newline
-    I consider amongst my most valuable aptitudes those of being methodical, effective and autonomous.'
+    title: 'Software Engineering'
+    description: 'Mechatronics Engineer specialized in Software Engineering.
+      I bring expertise in definition, architecture, design, implementation and management of software projects.
+      My professional interests are programming in general, software infrastructure and automation—including testing, CI/CD, distribution, updates, and monitoring—as well as Linux (both server and embedded), bare-metal programming, and system architecture.
+      I am a methodical problem solver that works with a high degree of dedication, efficiency and autonomy.'
 
   professional:
     section_name: 'Work experience'
     entries:
       - uid: 'lumiplan'
-        position: 'Software Engineer (Consultant)'
+        position: 'Software Engineer (Freelancer)'
         organization: 'Lumiplan'
-        description: 'TODO.'
+        description: 'Work within the Application Software team of a design office responsible for multiple embedded products in public transport vehicles.
+          Implementation of new communication protocols, writing unit tests, maintenance of legacy code, debugging, and analysis of field-observed anomalies, etc.'
 
       - uid: 'squadrone'
         position: 'Software Engineer'
         organization: 'Squadrone System'
-        description: 'Software engineering for drones aimed towards industrial applications. Worked with different clients (10-15) as well as in multiple internal R\&D projects. Contributed to most of the stack of the company''s software. \newline
-          Software errors in drones are costly and dangerous. I played an key role in the improvement of the internal infrastructure of the company by designing, proposing and/or implementing solutions involving better processes, automated testing, continuous integration and simulation to \textbf{improve quality and reduce costs}.'
+        description: 'Software engineering for drones aimed towards industrial applications.
+          Worked in different client projects (10-15) as well as in multiple internal R\&D projects.
+          Contributed to most of the software stack. \newline
+          I played an key role in the improvement of the internal infrastructure of the company by designing, proposing and/or implementing solutions involving better practices, automated testing, continuous integration and simulation to improve quality and reduce costs.'
 
       - uid: 'realware'
         position: 'Freelancer/Consultant'
         organization: 'Realware'
-        description: 'Delivered four independent software projects to four different clients. Worked alone in all the projects from the requirements and proposal, through design, programming and documentation, all the way up to their deployment/installation and training. \newline
-          Three of the projects were Rails applications, two were hosted on the cloud (AWS) and one was installed on a local server. They involved authentication, authorization, file-sharing and storage (S3 and locally), image collecting (from mobile phone endpoints) and report generation (PDF). The last project was an Android application to drive the integrated RFID reader of a particular smartphone.'
+        description: 'Delivered four independent software projects to four different clients.
+          Worked alone in all the projects from the requirements and proposal, through design, programming and documentation, all the way up to their deployment/installation and training. \newline
+          Three of the projects were Rails applications, two were hosted on the cloud (AWS) and one was installed on a local server.
+          They involved authentication, authorization, file-sharing and storage (S3 and locally), image collecting (from mobile phone endpoints) and report generation (PDF).
+          The last project was an Android application to drive the integrated RFID reader of a particular smartphone.'
 
       - uid: 'abre'
         position: 'Project Engineer and Intern'

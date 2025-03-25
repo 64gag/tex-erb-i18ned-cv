@@ -22,31 +22,37 @@ fr:
 
   interests:
     section_name: 'Intérêts'
-    title: 'Consultant Informatique'
-    description: 'Consultant Informatique : Ingénieur en Mécatronique, spécialisé en informatique. Disponible pour collaborer avec des sociétés à la recherche de solutions de définition, implémentation, architecture, design, infrastructure, gestion ou formation de projets logiciels. \newline
-     Je suis attiré par des projets à fort impact, stimulants et ambitieux où je puisse contribuer aux objectifs d''une équipe avec une forte valeur de l''excellence. Mes principaux domaines d''intérêt professionnel sont Linux (serveur ou embarqué), le bare-metal, l''architecture logicielle, l''infrastructure / l''automatisation appliquées au logiciel (test et validation, distribution, mises à jour, ...), le traitement numérique du signal et l''informatique distribuée. \newline
-     Je considère parmi mes aptitudes les plus importantes celles d''être méthodique, efficace et autonome. \newline \newline
-     Je suis immatriculé en France sous le régime de la micro-entreprise, KYMASOFT est le nom commercial de mon activité. Pour me contacter, le plus efficace est de prendre un RDV pour un "Discovery Call" dirèctement sur \ghref{https://kymasoft.com}{https://kymasoft.com}'
+    title: 'Ingénieur Logiciel'
+    description: 'Ingénieur en Mécatronique, spécialisé en Ingénierie Logiciel.
+      Je possède une expertise en définition, architecture, conception, implémentation et gestion de projets logiciels.
+      Mes centres d''intérêt professionnels se concentrent sur la programmation, l''infrastructure logicielle et l''automatisation — incluant les tests, CI/CD, distribution, mises à jour et surveillance — ainsi que sur Linux (serveur et embarqué), la programmation bare-metal et l''architecture système.
+      Je suis méthodique et travaille avec un haut degré d''implication, d''efficacité et d''autonomie.'
 
   professional:
     section_name: 'Expérience professionnelle'
     entries:
       - uid: 'lumiplan'
-        position: 'Ingénieur Logiciel (Consultant)'
+        position: 'Ingénieur Logiciel (Freelance)'
         organization: 'Lumiplan'
-        description: 'Prestation au sein de l''équipe Software Applicatif d''un bureau d''études responsable de plusieurs produits embarqués dans des véhicules de transport public. Implémentation de nouveaux protocoles de communication, écriture de tests unitaires, maintenance de code historique, débugagge et analyse d''anomalies observées sur le terrain, etc. \newline'
+        description: 'Prestation au sein de l''équipe Software Applicatif d''un bureau d''études responsable de plusieurs produits embarqués dans des véhicules de transport public.
+          Implémentation de nouveaux protocoles de communication, écriture de tests unitaires, maintenance de code historique, débugagge et analyse d''anomalies observées sur le terrain, etc.'
 
       - uid: 'squadrone'
         position: 'Ingénieur Logiciel'
         organization: 'Squadrone System'
-        description: 'De l''ingénierie logicielle pour drones conçus pour des applications industrielles. J''ai travaillé pour plusieurs clients différents (10-15), tout comme pour des projets R\&D en interne. J''ai contribué à la plupart du stack logiciel de la société. \newline
-          Les erreurs logicielles dans les drones sont coûteux et dangereux. J''ai joué un rôle clé dans l''amélioration de l''infrastructure interne de l''entreprise à travers la conception, la proposition et / ou l''implémentation de solutions composées de meilleures procédures, des tests automatiques, de l''intégration continue et de la simulation pour \textbf{améliorer la qualité et réduire les coûts}.'
+        description: 'De l''ingénierie logicielle pour drones conçus pour des applications industrielles.
+          J''ai travaillé dans plusieurs projets clients (10-15), tout comme pour des projets R\&D en interne.
+          J''ai contribué à la plupart du stack logiciel. \newline
+          J''ai joué un rôle clé dans l''amélioration de l''infrastructure interne de l''entreprise à travers la conception, la proposition et / ou l''implémentation de solutions composées de meilleures pratiques, des tests automatiques, de l''intégration continue et de la simulation pour \textbf{améliorer la qualité et réduire les coûts}.'
 
       - uid: 'realware'
         position: 'Indépendant / Consultant'
         organization: 'Realware'
-        description: 'Exécution de quatre projets logiciels pour des clients différents. J''ai travaillé en autonomie dès la définition des cahiers de charges, l''élaboration de la proposition, la conception, la programmation et la documentation, jusqu''au déploiement, l''installation et la formation. \newline
-          Trois projets étaient des applications en Rails, dont deux étaient hébergés dans le cloud (AWS) et l''autre dans un serveur local. Parmi les capacités implémentées il y avait de l''authentification, de l''autorisation, du partage et stockage de fichiers (S3 et local), de la récollection d''images (depuis des terminaux mobiles) et de la génération de rapports (PDF). Le dernier projet consistait d''une application Android pour piloter le lecteur RFID intégré à un smartphone.'
+        description: 'Exécution de quatre projets logiciels pour des clients différents.
+          J''ai travaillé en autonomie dès la définition des cahiers de charges, l''élaboration de la proposition, la conception, la programmation et la documentation, jusqu''au déploiement, l''installation et la formation. \newline
+          Trois projets étaient des applications en Rails, dont deux étaient hébergés dans le cloud (AWS) et l''autre dans un serveur local.
+          Parmi les capacités implémentées il y avait de l''authentification, de l''autorisation, du partage et stockage de fichiers (S3 et local), de la récollection d''images (depuis des terminaux mobiles) et de la génération de rapports (PDF).
+          Le dernier projet consistait d''une application Android pour piloter le lecteur RFID intégré à un smartphone.'
 
       - uid: 'abre'
         position: 'Ingénieur de Projets et Stagiaire'
