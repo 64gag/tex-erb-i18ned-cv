@@ -24,8 +24,8 @@ en:
     section_name: 'Interests'
     title: 'Software Engineering'
     description: 'Mechatronics Engineer specialized in Software Engineering.
-      I bring expertise in definition, architecture, design, implementation and management of software projects.
-      My professional interests are programming in general, software infrastructure and automation—including testing, CI/CD, distribution, updates, and monitoring—as well as Linux (both server and embedded), bare-metal programming, and system architecture.
+      I bring expertise in definition, design, implementation and management of software projects.
+      My professional interests are programming, software infrastructure and automation—including testing, CI/CD, distribution, updates, and monitoring—as well as Linux (both server and embedded), bare-metal programming, and system architecture.
       I am a methodical problem solver that works with a high degree of dedication, efficiency and autonomy.'
 
   professional:
@@ -50,7 +50,7 @@ en:
         organization: 'Realware'
         description: 'Delivered four independent software projects to four different clients.
           Worked alone in all the projects from the requirements and proposal, through design, programming and documentation, all the way up to their deployment/installation and training. \newline
-          Three of the projects were Rails applications, two were hosted on the cloud (AWS) and one was installed on a local server.
+          Three of the projects were Rails applications: of which two were hosted on the cloud (AWS) and the last one was installed on a local server.
           They involved authentication, authorization, file-sharing and storage (S3 and locally), image collecting (from mobile phone endpoints) and report generation (PDF).
           The last project was an Android application to drive the integrated RFID reader of a particular smartphone.'
 
